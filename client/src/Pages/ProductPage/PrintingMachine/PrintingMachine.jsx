@@ -1,3 +1,369 @@
+// import React, { useState, useEffect } from "react";
+// import {
+//   Star,
+//   Phone,
+//   Mail,
+//   MapPin,
+//   ChevronRight,
+//   Zap,
+//   Award,
+//   Shield,
+//   Truck,
+// } from "lucide-react";
+
+// const PrintingMachinesPage = () => {
+//   const [isVisible, setIsVisible] = useState(false);
+//   const [activeProduct, setActiveProduct] = useState(null);
+
+//   useEffect(() => {
+//     setIsVisible(true);
+//   }, []);
+
+//   const products = [
+//     {
+//       id: 1,
+//       name: "Komori 2 Color Offset Printing Machine",
+//       image:
+//         "https://via.placeholder.com/600x400/4F46E5/FFFFFF?text=Komori+2+Color",
+//       description:
+//         "High-precision Komori 2-color offset printing machine designed for exceptional print quality and reliability. Perfect for commercial printing operations requiring consistent results.",
+//       features: [
+//         "2-Color Printing",
+//         "High Speed Operation",
+//         "Precision Registration",
+//         "Auto Plate Loading",
+//       ],
+//       price: "Contact for Quote",
+//     },
+//     {
+//       id: 2,
+//       name: "2 Colour Heidelberg Sorsz Offset Printing Machine",
+//       image:
+//         "https://via.placeholder.com/600x400/FF8904/FFFFFF?text=Heidelberg+Sorsz",
+//       description:
+//         "Professional-grade Heidelberg Sorsz 2-color offset printing machine offering superior print quality with advanced automation features for enhanced productivity.",
+//       features: [
+//         "2-Color Configuration",
+//         "Advanced Automation",
+//         "Quick Job Changes",
+//         "Superior Print Quality",
+//       ],
+//       price: "Contact for Quote",
+//     },
+//     {
+//       id: 3,
+//       name: "Heidelberg CD 102-6 LX Offset Printing Machine",
+//       image:
+//         "https://via.placeholder.com/600x400/3B82F6/FFFFFF?text=CD+102-6+LX",
+//       description:
+//         "State-of-the-art Heidelberg CD 102-6 LX featuring 6-color capability with advanced technology for high-volume commercial printing operations.",
+//       features: [
+//         "6-Color Printing",
+//         "Large Format",
+//         "Advanced Controls",
+//         "High Volume Output",
+//       ],
+//       price: "Contact for Quote",
+//     },
+//     {
+//       id: 4,
+//       name: "Heidelberg GTO 52 VP Offset Printing Machine",
+//       image: "https://via.placeholder.com/600x400/10B981/FFFFFF?text=GTO+52+VP",
+//       description:
+//         "Compact and efficient Heidelberg GTO 52 VP perfect for small to medium print runs with exceptional versatility and print quality.",
+//       features: [
+//         "Compact Design",
+//         "Variable Print",
+//         "Easy Operation",
+//         "Quick Setup",
+//       ],
+//       price: "Contact for Quote",
+//     },
+//     {
+//       id: 5,
+//       name: "Heidelberg SM 74 Offset Color Printing Machine",
+//       image:
+//         "https://via.placeholder.com/600x400/8B5CF6/FFFFFF?text=SM+74+Color",
+//       description:
+//         "Premium Heidelberg SM 74 color printing machine delivering outstanding color reproduction and efficiency for demanding commercial applications.",
+//       features: [
+//         "Multi-Color Printing",
+//         "Premium Quality",
+//         "Fast Production",
+//         "Color Management",
+//       ],
+//       price: "Contact for Quote",
+//     },
+//     {
+//       id: 6,
+//       name: "Heidelberg Single Color Printing Machine",
+//       image:
+//         "https://via.placeholder.com/600x400/EF4444/FFFFFF?text=Single+Color",
+//       description:
+//         "Reliable Heidelberg single color printing machine ideal for monochrome printing tasks with consistent quality and operational efficiency.",
+//       features: [
+//         "Single Color",
+//         "Reliable Performance",
+//         "Cost Effective",
+//         "Easy Maintenance",
+//       ],
+//       price: "Contact for Quote",
+//     },
+//   ];
+
+//   const fadeInUp = {
+//     initial: { opacity: 0, y: 60 },
+//     animate: { opacity: 1, y: 0 },
+//     transition: { duration: 0.6, ease: "easeOut" },
+//   };
+
+//   const staggerContainer = {
+//     initial: {},
+//     animate: {
+//       transition: {
+//         staggerChildren: 0.1,
+//       },
+//     },
+//   };
+
+//   return (
+//     <div className="min-h-screen bg-gradient-to-br from-white to-blue-50">
+//       {/* SEO Meta Tags */}
+//       {/* <head>
+//         <title>
+//           Premium Printing Machines | Anamika Machineries | Heidelberg & Komori
+//         </title>
+//         <meta
+//           name="description"
+//           content="Leading supplier of premium printing machines including Heidelberg and Komori offset printing machines. High-quality commercial printing solutions."
+//         />
+//         <meta
+//           name="keywords"
+//           content="printing machines, Heidelberg, Komori, offset printing, commercial printing, Anamika Machineries"
+//         />
+//       </head> */}
+
+//       {/* Hero Section */}
+//       <section className="relative overflow-hidden bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white">
+//         <div className="absolute inset-0 bg-black/20"></div>
+//         <div className="relative container mx-auto px-4 py-20">
+//           <div
+//             className={`text-center transition-all duration-1000 ${
+//               isVisible
+//                 ? "opacity-100 translate-y-0"
+//                 : "opacity-0 translate-y-10"
+//             }`}
+//           >
+//             <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">
+//               Anamika Machineries
+//             </h1>
+//             <p className="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto">
+//               Premium Printing Machines for Professional Excellence
+//             </p>
+//             <div className="flex justify-center items-center gap-6 mb-8">
+//               <div className="flex items-center gap-2">
+//                 <Award className="w-6 h-6 text-yellow-400" />
+//                 <span>Certified Quality</span>
+//               </div>
+//               <div className="flex items-center gap-2">
+//                 <Shield className="w-6 h-6 text-yellow-400" />
+//                 <span>Warranty Support</span>
+//               </div>
+//               <div className="flex items-center gap-2">
+//                 <Truck className="w-6 h-6 text-yellow-400" />
+//                 <span>Nationwide Delivery</span>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//       </section>
+
+//       {/* Products Grid */}
+//       <section className="py-20 px-4">
+//         <div className="container mx-auto">
+//           <div
+//             className={`text-center mb-16 transition-all duration-1000 delay-300 ${
+//               isVisible
+//                 ? "opacity-100 translate-y-0"
+//                 : "opacity-0 translate-y-10"
+//             }`}
+//           >
+//             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800">
+//               Our Premium <span className="text-blue-600">Product Range</span>
+//             </h2>
+//             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+//               Discover our comprehensive collection of world-class printing
+//               machines from industry leaders Heidelberg and Komori
+//             </p>
+//           </div>
+
+//           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+//             {products.map((product, index) => (
+//               <div
+//                 key={product.id}
+//                 className={`group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-blue-200 transform hover:-translate-y-2 ${
+//                   isVisible
+//                     ? "opacity-100 translate-y-0"
+//                     : "opacity-0 translate-y-10"
+//                 }`}
+//                 style={{ transitionDelay: `${index * 100 + 500}ms` }}
+//                 onMouseEnter={() => setActiveProduct(product.id)}
+//                 onMouseLeave={() => setActiveProduct(null)}
+//               >
+//                 <div className="relative overflow-hidden">
+//                   <img
+//                     src={product.image}
+//                     alt={product.name}
+//                     className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+//                   />
+//                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+//                   {/* <div className="absolute top-4 right-4 bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+//                     Premium
+//                   </div> */}
+//                 </div>
+
+//                 <div className="p-6">
+//                   <h3 className="text-xl font-bold mb-3 text-gray-800 group-hover:text-blue-600 transition-colors duration-300">
+//                     {product.name}
+//                   </h3>
+
+//                   <p className="text-gray-600 mb-4 text-sm leading-relaxed">
+//                     {product.description}
+//                   </p>
+
+//                   <div className="mb-4">
+//                     <h4 className="font-semibold text-gray-800 mb-2">
+//                       Key Features:
+//                     </h4>
+//                     <div className="grid grid-cols-2 gap-1">
+//                       {product.features.map((feature, idx) => (
+//                         <div
+//                           key={idx}
+//                           className="flex items-center text-sm text-gray-600"
+//                         >
+//                           <Zap className="w-3 h-3 text-orange-500 mr-1 flex-shrink-0" />
+//                           {feature}
+//                         </div>
+//                       ))}
+//                     </div>
+//                   </div>
+
+//                   <div className="border-t pt-4 flex justify-between items-center">
+//                     <div className="text-lg font-bold text-blue-600">
+//                       {product.price}
+//                     </div>
+//                     <button className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-6 py-2 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center gap-2 group">
+//                       Contact Us
+//                       <ChevronRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+//                     </button>
+//                   </div>
+//                 </div>
+//               </div>
+//             ))}
+//           </div>
+//         </div>
+//       </section>
+
+//       {/* Why Choose Us */}
+//       <section className="py-20 bg-gradient-to-r from-gray-50 to-blue-50">
+//         <div className="container mx-auto px-4">
+//           <div className="text-center mb-16">
+//             <h2 className="text-4xl font-bold mb-6 text-gray-800">
+//               Why Choose{" "}
+//               <span className="text-orange-500">Anamika Machineries</span>?
+//             </h2>
+//           </div>
+
+//           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+//             {[
+//               {
+//                 icon: Award,
+//                 title: "Premium Quality",
+//                 desc: "Only the finest printing machines from world-renowned manufacturers",
+//               },
+//               {
+//                 icon: Shield,
+//                 title: "Warranty Support",
+//                 desc: "Comprehensive warranty and after-sales support for peace of mind",
+//               },
+//               {
+//                 icon: Zap,
+//                 title: "Expert Installation",
+//                 desc: "Professional installation and setup by certified technicians",
+//               },
+//               {
+//                 icon: Truck,
+//                 title: "Fast Delivery",
+//                 desc: "Quick and safe delivery across the country with proper handling",
+//               },
+//             ].map((item, index) => (
+//               <div
+//                 key={index}
+//                 className="text-center group hover:transform hover:scale-105 transition-all duration-300"
+//               >
+//                 <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100 hover:border-blue-200">
+//                   <item.icon className="w-12 h-12 text-blue-600 mx-auto mb-4 group-hover:text-orange-500 transition-colors duration-300" />
+//                   <h3 className="text-lg font-bold mb-2 text-gray-800">
+//                     {item.title}
+//                   </h3>
+//                   <p className="text-gray-600 text-sm">{item.desc}</p>
+//                 </div>
+//               </div>
+//             ))}
+//           </div>
+//         </div>
+//       </section>
+
+//       {/* Contact Section */}
+//       <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+//         <div className="container mx-auto px-4">
+//           <div className="text-center mb-12">
+//             <h2 className="text-4xl font-bold mb-6">Ready to Get Started?</h2>
+//             <p className="text-xl text-blue-100 max-w-2xl mx-auto mb-8">
+//               Contact us today for personalized quotes and expert consultation
+//               on the perfect printing solution for your business.
+//             </p>
+//           </div>
+
+//           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+//             <div className="text-center group">
+//               <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl hover:bg-white/20 transition-all duration-300">
+//                 <Phone className="w-8 h-8 mx-auto mb-4 text-yellow-400" />
+//                 <h3 className="font-bold mb-2">Call Us</h3>
+//                 <p className="text-blue-100">+91 XXXXX XXXXX</p>
+//               </div>
+//             </div>
+
+//             <div className="text-center group">
+//               <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl hover:bg-white/20 transition-all duration-300">
+//                 <Mail className="w-8 h-8 mx-auto mb-4 text-yellow-400" />
+//                 <h3 className="font-bold mb-2">Email Us</h3>
+//                 <p className="text-blue-100">info@anamikamachineries.com</p>
+//               </div>
+//             </div>
+
+//             <div className="text-center group">
+//               <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl hover:bg-white/20 transition-all duration-300">
+//                 <MapPin className="w-8 h-8 mx-auto mb-4 text-yellow-400" />
+//                 <h3 className="font-bold mb-2">Visit Us</h3>
+//                 <p className="text-blue-100">Your Location Here</p>
+//               </div>
+//             </div>
+//           </div>
+
+//           <div className="text-center mt-12">
+//             <button className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+//               Get Free Quote Today
+//             </button>
+//           </div>
+//         </div>
+//       </section>
+//     </div>
+//   );
+// };
+
+// export default PrintingMachinesPage;
+
 import React, { useState, useEffect } from "react";
 import {
   Star,
@@ -9,11 +375,13 @@ import {
   Award,
   Shield,
   Truck,
+  ChevronLeft,
 } from "lucide-react";
 
 const PrintingMachinesPage = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [activeProduct, setActiveProduct] = useState(null);
+  const [currentImageIndex, setCurrentImageIndex] = useState({});
 
   useEffect(() => {
     setIsVisible(true);
@@ -23,8 +391,12 @@ const PrintingMachinesPage = () => {
     {
       id: 1,
       name: "Komori 2 Color Offset Printing Machine",
-      image:
-        "https://via.placeholder.com/600x400/4F46E5/FFFFFF?text=Komori+2+Color",
+      images: [
+        "https://5.imimg.com/data5/SELLER/Default/2023/6/316243772/IS/XR/HV/29805837/new-product-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/389326264/DL/UG/ML/29805837/machine-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/389326271/AP/WD/HO/29805837/machine-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/389326280/FT/ZR/RV/29805837/machine-500x500.jpeg",
+      ],
       description:
         "High-precision Komori 2-color offset printing machine designed for exceptional print quality and reliability. Perfect for commercial printing operations requiring consistent results.",
       features: [
@@ -33,13 +405,18 @@ const PrintingMachinesPage = () => {
         "Precision Registration",
         "Auto Plate Loading",
       ],
-      price: "Contact for Quote",
+      price: "₹15,00,000",
+      originalPrice: "₹55,00,000",
     },
     {
       id: 2,
       name: "2 Colour Heidelberg Sorsz Offset Printing Machine",
-      image:
-        "https://via.placeholder.com/600x400/FF8904/FFFFFF?text=Heidelberg+Sorsz",
+      images: [
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/394184613/XY/EE/QG/29805837/2-colour-heidelberg-sorsz-offset-printing-machine-500x500.jpg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/394184672/MM/JY/HU/29805837/2-colour-heidelberg-sorsz-offset-printing-machine-500x500.jpg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/394184617/MO/ML/BD/29805837/2-colour-heidelberg-sorsz-offset-printing-machine-500x500.jpg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/394184621/GN/AZ/SV/29805837/2-colour-heidelberg-sorsz-offset-printing-machine-500x500.jpg",
+      ],
       description:
         "Professional-grade Heidelberg Sorsz 2-color offset printing machine offering superior print quality with advanced automation features for enhanced productivity.",
       features: [
@@ -48,13 +425,18 @@ const PrintingMachinesPage = () => {
         "Quick Job Changes",
         "Superior Print Quality",
       ],
-      price: "Contact for Quote",
+      price: "₹20,00,000",
+      originalPrice: "₹45,00,000",
     },
     {
       id: 3,
       name: "Heidelberg CD 102-6 LX Offset Printing Machine",
-      image:
-        "https://via.placeholder.com/600x400/3B82F6/FFFFFF?text=CD+102-6+LX",
+      images: [
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/393739791/FT/GN/JG/29805837/printing-machine-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/393739797/LQ/OH/LC/29805837/printing-machine-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/393739804/YZ/HD/EB/29805837/printing-machine-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/393739807/PS/QW/XS/29805837/printing-machine-500x500.jpeg",
+      ],
       description:
         "State-of-the-art Heidelberg CD 102-6 LX featuring 6-color capability with advanced technology for high-volume commercial printing operations.",
       features: [
@@ -63,12 +445,18 @@ const PrintingMachinesPage = () => {
         "Advanced Controls",
         "High Volume Output",
       ],
-      price: "Contact for Quote",
+      price: "Get Latest Price",
+      originalPrice: "₹1,45,00,000",
     },
     {
       id: 4,
       name: "Heidelberg GTO 52 VP Offset Printing Machine",
-      image: "https://via.placeholder.com/600x400/10B981/FFFFFF?text=GTO+52+VP",
+      images: [
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/393739249/VE/YO/QC/29805837/whatsapp-image-2024-02-27-at-9-12-11-am-1-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/393739244/XK/BK/KG/29805837/whatsapp-image-2024-02-27-at-9-12-12-am-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/393739252/PO/QZ/GO/29805837/whatsapp-image-2024-02-27-at-9-12-11-am-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/393739244/XK/BK/KG/29805837/whatsapp-image-2024-02-27-at-9-12-12-am-500x500.jpeg",
+      ],
       description:
         "Compact and efficient Heidelberg GTO 52 VP perfect for small to medium print runs with exceptional versatility and print quality.",
       features: [
@@ -77,13 +465,18 @@ const PrintingMachinesPage = () => {
         "Easy Operation",
         "Quick Setup",
       ],
-      price: "Contact for Quote",
+      price: "Get Latest Price",
+      originalPrice: "₹22,00,000",
     },
     {
       id: 5,
       name: "Heidelberg SM 74 Offset Color Printing Machine",
-      image:
-        "https://via.placeholder.com/600x400/8B5CF6/FFFFFF?text=SM+74+Color",
+      images: [
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/391351428/SW/CF/PH/29805837/machine-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/391351417/LJ/XM/MK/29805837/machine-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/391351426/SV/NI/ZP/29805837/machine-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/391351429/WL/DF/QC/29805837/machine-500x500.jpeg",
+      ],
       description:
         "Premium Heidelberg SM 74 color printing machine delivering outstanding color reproduction and efficiency for demanding commercial applications.",
       features: [
@@ -92,13 +485,18 @@ const PrintingMachinesPage = () => {
         "Fast Production",
         "Color Management",
       ],
-      price: "Contact for Quote",
+      price: "Get Latest Price",
+      originalPrice: "₹85,00,000",
     },
     {
       id: 6,
       name: "Heidelberg Single Color Printing Machine",
-      image:
-        "https://via.placeholder.com/600x400/EF4444/FFFFFF?text=Single+Color",
+      images: [
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/389314246/UX/UB/FV/29805837/bobst-die-cutting-machine-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/389314249/EQ/UK/ER/29805837/bobst-die-cutting-machine-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/389314243/WK/XW/VC/29805837/bobst-die-cutting-machine-500x500.jpeg",
+        "https://via.placeholder.com/600x400/EF4444/FFFFFF?text=Single+Color+Output",
+      ],
       description:
         "Reliable Heidelberg single color printing machine ideal for monochrome printing tasks with consistent quality and operational efficiency.",
       features: [
@@ -107,9 +505,284 @@ const PrintingMachinesPage = () => {
         "Cost Effective",
         "Easy Maintenance",
       ],
-      price: "Contact for Quote",
+      price: "Get Latest Price",
+      originalPrice: "₹15,00,000",
+    },
+    {
+      id: 7,
+      name: "Heidelberg CD-74 Offset Printing Machine",
+      images: [
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/391350931/ZW/CO/DF/29805837/machine-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/391350940/XS/OQ/CB/29805837/machine-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/391350937/VW/RK/ZQ/29805837/machine-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/391350933/IA/ST/XQ/29805837/machine-500x500.jpeg",
+      ],
+      description:
+        "Reliable Heidelberg single color printing machine ideal for monochrome printing tasks with consistent quality and operational efficiency.",
+      features: [
+        "Single Color",
+        "Reliable Performance",
+        "Cost Effective",
+        "Easy Maintenance",
+      ],
+      price: "Get Latest Price",
+      originalPrice: "₹15,00,000",
+    },
+    {
+      id: 8,
+      name: "Komori Spica 429 2009 Model Offset Printing Machine",
+      images: [
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/393903414/NQ/ZO/TT/29805837/komori-spica-429-printing-machine-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/393903395/GQ/DL/HZ/29805837/komori-spica-429-printing-machine-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/393903393/XR/CD/KV/29805837/komori-spica-429-printing-machine-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/393903410/QI/AH/VD/29805837/komori-spica-429-printing-machine-500x500.jpeg",
+      ],
+      description:
+        "Reliable Heidelberg single color printing machine ideal for monochrome printing tasks with consistent quality and operational efficiency.",
+      features: [
+        "Single Color",
+        "Reliable Performance",
+        "Cost Effective",
+        "Easy Maintenance",
+      ],
+      price: "Get Latest Price",
+      originalPrice: "₹15,00,000",
+    },
+    {
+      id: 9,
+      name: "Komori Spica 429 Offset Printing Machine",
+      images: [
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/393902225/JY/BN/LE/29805837/komori-spica-429-offset-printing-machine-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/393902239/LS/YO/OT/29805837/komori-spica-429-offset-printing-machine-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/393902247/DC/SW/KU/29805837/komori-spica-429-offset-printing-machine-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/393902271/NI/WY/BN/29805837/komori-spica-429-offset-printing-machine-500x500.jpeg",
+      ],
+      description:
+        "Reliable Heidelberg single color printing machine ideal for monochrome printing tasks with consistent quality and operational efficiency.",
+      features: [
+        "Single Color",
+        "Reliable Performance",
+        "Cost Effective",
+        "Easy Maintenance",
+      ],
+      price: "Get Latest Price",
+      originalPrice: "₹15,00,000",
+    },
+    {
+      id: 10,
+      name: "Polly 266 Offset Printing Machine",
+      images: [
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/393740267/OH/JQ/RW/29805837/poly-266-year-1997-conventional-dampening-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/393740257/QE/RY/MI/29805837/poly-266-year-1997-conventional-dampening-500x500.jpeg",
+        "",
+        "https://via.placeholder.com/600x400/EF4444/FFFFFF?text=Single+Color+Output",
+      ],
+      description:
+        "Reliable Heidelberg single color printing machine ideal for monochrome printing tasks with consistent quality and operational efficiency.",
+      features: [
+        "Single Color",
+        "Reliable Performance",
+        "Cost Effective",
+        "Easy Maintenance",
+      ],
+      price: "Get Latest Price",
+      originalPrice: "₹15,00,000",
+    },
+    {
+      id: 11,
+      name: "508 Web Offset Printing Machine",
+      images: [
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/389415115/ER/PV/TL/29805837/whatsapp-image-2024-02-16-at-8-17-58-pm-1-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/389415122/DU/XD/IX/29805837/whatsapp-image-2024-02-16-at-8-17-57-pm-1-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/389415124/GI/RQ/TF/29805837/whatsapp-image-2024-02-16-at-8-17-57-pm-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/389415121/AM/KX/QQ/29805837/whatsapp-image-2024-02-16-at-8-17-58-pm-500x500.jpeg",
+      ],
+      description:
+        "Reliable Heidelberg single color printing machine ideal for monochrome printing tasks with consistent quality and operational efficiency.",
+      features: [
+        "Single Color",
+        "Reliable Performance",
+        "Cost Effective",
+        "Easy Maintenance",
+      ],
+      price: "Get Latest Price",
+      originalPrice: "₹15,00,000",
+    },
+    {
+      id: 12,
+      name: "Heidelberg SM 74 Offset Printing Machine",
+      images: [
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/389410688/CG/PE/JA/29805837/printing-machine-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/389410691/WR/QA/ZS/29805837/printing-machine-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/389410697/VA/WB/XQ/29805837/printing-machine-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/389410691/WR/QA/ZS/29805837/printing-machine-500x500.jpeg",
+      ],
+      description:
+        "Reliable Heidelberg single color printing machine ideal for monochrome printing tasks with consistent quality and operational efficiency.",
+      features: [
+        "Single Color",
+        "Reliable Performance",
+        "Cost Effective",
+        "Easy Maintenance",
+      ],
+      price: "Get Latest Price",
+      originalPrice: "₹15,00,000",
+    },
+    {
+      id: 13,
+      name: "Polly 4 Color Offset Printing Machine",
+      images: [
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/394182407/RB/WA/WJ/29805837/polly-4-color-offset-printing-machine-500x500.jpg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/394182870/QB/KU/PQ/29805837/polly-4-color-offset-printing-machine-500x500.jpg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/394182747/HL/MW/EE/29805837/polly-4-color-offset-printing-machine-500x500.jpg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/394182822/LS/DY/ZH/29805837/polly-4-color-offset-printing-machine-500x500.jpg",
+      ],
+      description:
+        "Reliable Heidelberg single color printing machine ideal for monochrome printing tasks with consistent quality and operational efficiency.",
+      features: [
+        "Single Color",
+        "Reliable Performance",
+        "Cost Effective",
+        "Easy Maintenance",
+      ],
+      price: "Get Latest Price",
+      originalPrice: "₹15,00,000",
+    },
+    {
+      id: 14,
+      name: "Adast Dominant 745 C Offset Printing Machine",
+      images: [
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/389280880/IA/SY/AX/29805837/compressor-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/389280879/LC/JP/GG/29805837/compressor-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/389280947/OL/NC/TJ/29805837/compressor-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/389280880/IA/SY/AX/29805837/compressor-500x500.jpeg",
+      ],
+      description:
+        "Reliable Heidelberg single color printing machine ideal for monochrome printing tasks with consistent quality and operational efficiency.",
+      features: [
+        "Single Color",
+        "Reliable Performance",
+        "Cost Effective",
+        "Easy Maintenance",
+      ],
+      price: "Get Latest Price",
+      originalPrice: "₹15,00,000",
+    },
+    {
+      id: 15,
+      name: "Komori Lithrone 426 Offset Printing Machine",
+      images: [
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/393901438/KA/QG/OD/29805837/komori-lithrone-426-offset-machine-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/393901447/EN/MW/AT/29805837/komori-lithrone-426-offset-machine-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/393901438/KA/QG/OD/29805837/komori-lithrone-426-offset-machine-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/393901447/EN/MW/AT/29805837/komori-lithrone-426-offset-machine-500x500.jpeg",
+      ],
+      description:
+        "Reliable Heidelberg single color printing machine ideal for monochrome printing tasks with consistent quality and operational efficiency.",
+      features: [
+        "Single Color",
+        "Reliable Performance",
+        "Cost Effective",
+        "Easy Maintenance",
+      ],
+      price: "Get Latest Price",
+      originalPrice: "₹15,00,000",
+    },
+    {
+      id: 16,
+      name: "Komori Lithrone 428 Offset Printing Machine",
+      images: [
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/393738864/GX/RQ/FA/29805837/whatsapp-image-2024-02-27-at-9-12-09-am-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/393738864/GX/RQ/FA/29805837/whatsapp-image-2024-02-27-at-9-12-09-am-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/393738864/GX/RQ/FA/29805837/whatsapp-image-2024-02-27-at-9-12-09-am-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/393738864/GX/RQ/FA/29805837/whatsapp-image-2024-02-27-at-9-12-09-am-500x500.jpeg",
+      ],
+      description:
+        "Reliable Heidelberg single color printing machine ideal for monochrome printing tasks with consistent quality and operational efficiency.",
+      features: [
+        "Single Color",
+        "Reliable Performance",
+        "Cost Effective",
+        "Easy Maintenance",
+      ],
+      price: "Get Latest Price",
+      originalPrice: "₹15,00,000",
+    },
+    {
+      id: 17,
+      name: "Komori L 426 Offset Printing Machine",
+      images: [
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/389325566/YH/HK/UP/29805837/printing-machine-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/389325566/YH/HK/UP/29805837/printing-machine-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/389325566/YH/HK/UP/29805837/printing-machine-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/389325566/YH/HK/UP/29805837/printing-machine-500x500.jpeg",
+      ],
+      description:
+        "Reliable Heidelberg single color printing machine ideal for monochrome printing tasks with consistent quality and operational efficiency.",
+      features: [
+        "Single Color",
+        "Reliable Performance",
+        "Cost Effective",
+        "Easy Maintenance",
+      ],
+      price: "Get Latest Price",
+      originalPrice: "₹15,00,000",
+    },
+    {
+      id: 18,
+      name: "Bobst Sp 102 E Offset Printing Machine",
+      images: [
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/393885055/JU/XX/XT/29805837/bobst-sp-102-e-printing-machine-500x500.jpg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/393885055/JU/XX/XT/29805837/bobst-sp-102-e-printing-machine-500x500.jpg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/393885055/JU/XX/XT/29805837/bobst-sp-102-e-printing-machine-500x500.jpg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/393885055/JU/XX/XT/29805837/bobst-sp-102-e-printing-machine-500x500.jpg",
+      ],
+      description:
+        "Reliable Heidelberg single color printing machine ideal for monochrome printing tasks with consistent quality and operational efficiency.",
+      features: [
+        "Single Color",
+        "Reliable Performance",
+        "Cost Effective",
+        "Easy Maintenance",
+      ],
+      price: "Get Latest Price",
+      originalPrice: "₹15,00,000",
+    },
+    {
+      id: 19,
+      name: "Heidelberg Single Color Printing Machine",
+      images: [
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/389280391/NY/AN/HK/29805837/paper-printing-machine-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/389280390/UN/SI/RC/29805837/paper-printing-machine-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/389280394/KZ/JO/UY/29805837/paper-printing-machine-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/389280400/ME/SS/TK/29805837/paper-printing-machine-500x500.jpeg",
+      ],
+      description:
+        "Reliable Heidelberg single color printing machine ideal for monochrome printing tasks with consistent quality and operational efficiency.",
+      features: [
+        "Single Color",
+        "Reliable Performance",
+        "Cost Effective",
+        "Easy Maintenance",
+      ],
+      price: "Get Latest Price",
+      originalPrice: "₹15,00,000",
     },
   ];
+
+  const nextImage = (productId, imagesLength) => {
+    setCurrentImageIndex((prev) => ({
+      ...prev,
+      [productId]: ((prev[productId] || 0) + 1) % imagesLength,
+    }));
+  };
+
+  const prevImage = (productId, imagesLength) => {
+    setCurrentImageIndex((prev) => ({
+      ...prev,
+      [productId]: ((prev[productId] || 0) - 1 + imagesLength) % imagesLength,
+    }));
+  };
 
   const fadeInUp = {
     initial: { opacity: 0, y: 60 },
@@ -189,7 +862,8 @@ const PrintingMachinesPage = () => {
             }`}
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800">
-              Our Premium <span className="text-blue-600">Product Range</span>
+              Our Range Of&nbsp;
+              <span className="text-blue-600">Printing Machines</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Discover our comprehensive collection of world-class printing
@@ -197,7 +871,7 @@ const PrintingMachinesPage = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
             {products.map((product, index) => (
               <div
                 key={product.id}
@@ -210,15 +884,73 @@ const PrintingMachinesPage = () => {
                 onMouseEnter={() => setActiveProduct(product.id)}
                 onMouseLeave={() => setActiveProduct(null)}
               >
-                <div className="relative overflow-hidden">
+                <div className="relative overflow-hidden group">
                   <img
-                    src={product.image}
-                    alt={product.name}
-                    className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                    src={product.images[currentImageIndex[product.id] || 0]}
+                    alt={`${product.name} - Image ${
+                      (currentImageIndex[product.id] || 0) + 1
+                    }`}
+                    className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  <div className="absolute top-4 right-4 bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                    Premium
+
+                  {/* Image Navigation */}
+                  <div className="absolute inset-0 flex items-center justify-between px-2 md:opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        prevImage(product.id, product.images.length);
+                      }}
+                      className="bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-all duration-200 transform hover:scale-110"
+                    >
+                      <ChevronLeft className="w-4 h-4" />
+                    </button>
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        nextImage(product.id, product.images.length);
+                      }}
+                      className="bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-all duration-200 transform hover:scale-110"
+                    >
+                      <ChevronRight className="w-4 h-4" />
+                    </button>
+                  </div>
+
+                  {/* Image Indicators */}
+                  <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                    {product.images.map((_, idx) => (
+                      <button
+                        key={idx}
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setCurrentImageIndex((prev) => ({
+                            ...prev,
+                            [product.id]: idx,
+                          }));
+                        }}
+                        className={`w-2 h-2 rounded-full transition-all duration-200 ${
+                          (currentImageIndex[product.id] || 0) === idx
+                            ? "bg-white scale-125"
+                            : "bg-white/50 hover:bg-white/75"
+                        }`}
+                      />
+                    ))}
+                  </div>
+
+                  <div className="absolute inset-0 bg-gradient-to-t z-10 pointer-events-none from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
+                  <div className="absolute top-4 right-4 flex flex-col gap-2">
+                    {/* <div className="bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                      Premium
+                    </div>
+                    {product.originalPrice && (
+                      <div className="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
+                        Save ₹
+                        {(
+                          parseInt(product.originalPrice.replace(/[₹,]/g, "")) -
+                          parseInt(product.price.replace(/[₹,]/g, ""))
+                        ).toLocaleString()}
+                      </div>
+                    )} */}
                   </div>
                 </div>
 
@@ -249,8 +981,15 @@ const PrintingMachinesPage = () => {
                   </div>
 
                   <div className="border-t pt-4 flex justify-between items-center">
-                    <div className="text-lg font-bold text-blue-600">
-                      {product.price}
+                    <div className="flex flex-col">
+                      <div className="text-2xl font-bold text-green-600">
+                        {product.price}
+                      </div>
+                      {/* {product.originalPrice && (
+                        <div className="text-sm text-gray-500 line-through">
+                          {product.originalPrice}
+                        </div>
+                      )} */}
                     </div>
                     <button className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-6 py-2 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center gap-2 group">
                       Contact Us

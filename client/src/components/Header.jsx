@@ -13,11 +13,13 @@ import {
   X,
 } from "lucide-react";
 import Logo from "../assets/anamikalogo.png";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileActiveMenu, setMobileActiveMenu] = useState(null);
+  const navigate = useNavigate();
 
   // Menu data structure
   const menuItems = [
@@ -27,30 +29,37 @@ const Header = () => {
         {
           category: "Printing Machine",
           items: [],
+          link: "/printing-machine",
         },
         {
           category: "Perfect Binding Machine",
           items: [],
+          link: "",
         },
         {
           category: "Pasting Machine",
           items: [],
+          link: "",
         },
         {
           category: "Die Cutting Machine",
           items: [],
+          link: "",
         },
         {
           category: "Paper Cutting Machine",
           items: [],
+          link: "",
         },
         {
           category: "Folding Machine",
           items: [],
+          link: "",
         },
         {
           category: "Trimming Machine",
           items: [],
+          link: "",
         },
       ],
     },
@@ -151,13 +160,13 @@ const Header = () => {
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center gap-8">
               <a
-                href="#"
+                href="/"
                 className="text-gray-700 font-semibold hover:text-orange-600 transition-colors"
               >
                 HOME
               </a>
               <a
-                href="#"
+                href="/about-us"
                 className="text-gray-700 font-semibold hover:text-orange-500 transition-colors"
               >
                 ABOUT US
@@ -180,17 +189,19 @@ const Header = () => {
                       {menuItems[0].submenu.map((category, idx) => (
                         <div key={idx} className="mb-6 last:mb-0">
                           <div className="text-gray-600 border-white hover:text-orange-500 font-semibold text-sm mb-2 hover:border-l-4 hover:border-orange-500 pl-3">
-                            {category.category}
+                            <button onClick={() => navigate(category.link)}>
+                              {category.category}
+                            </button>
                           </div>
                           <div className="ml-7">
                             {category.items.map((item, itemIdx) => (
-                              <a
+                              <button
+                                onClick={() => navigate(item.link)}
                                 key={itemIdx}
-                                href="#"
                                 className="block text-gray-600 hover:text-orange-500 text-sm py-1 transition-colors"
                               >
                                 {item}
-                              </a>
+                              </button>
                             ))}
                           </div>
                         </div>
@@ -238,13 +249,13 @@ const Header = () => {
               </div> */}
 
               <a
-                href="#"
+                href="/gallery"
                 className="text-gray-700 font-semibold uppercase hover:text-orange-500 transition-colors"
               >
                 Gallery
               </a>
               <a
-                href="#"
+                href="/contact-us"
                 className="text-gray-700 font-semibold hover:text-orange-500 transition-colors"
               >
                 CONTACT
@@ -276,11 +287,11 @@ const Header = () => {
         {mobileMenuOpen && (
           <div className="lg:hidden bg-white border-t border-gray-200">
             <div className="px-4 py-4 space-y-4">
-              <a href="#" className="block text-orange-500 font-semibold py-2">
+              <a href="/" className="block text-orange-500 font-semibold py-2">
                 HOME
               </a>
               <a
-                href="#"
+                href="/about-us"
                 className="block text-gray-700 font-semibold py-2 hover:text-orange-500 transition-colors"
               >
                 ABOUT US
@@ -369,7 +380,7 @@ const Header = () => {
                 Gallery
               </a>
               <a
-                href="#"
+                href="/contact-us"
                 className="block text-gray-700 font-semibold py-2 hover:text-orange-500 transition-colors"
               >
                 CONTACT

@@ -34,32 +34,32 @@ const Header = () => {
         {
           category: "Perfect Binding Machine",
           items: [],
-          link: "",
+          link: "/binding-machine",
         },
         {
           category: "Pasting Machine",
           items: [],
-          link: "",
+          link: "/pasting-machine",
         },
         {
           category: "Die Cutting Machine",
           items: [],
-          link: "",
+          link: "/die-cutting-machine",
         },
         {
           category: "Paper Cutting Machine",
           items: [],
-          link: "",
+          link: "/paper-cutting-machine",
         },
         {
           category: "Folding Machine",
           items: [],
-          link: "",
+          link: "/folding-machine",
         },
         {
           category: "Trimming Machine",
           items: [],
-          link: "",
+          link: "/trimming-machine",
         },
       ],
     },

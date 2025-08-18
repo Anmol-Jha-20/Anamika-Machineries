@@ -11,9 +11,8 @@ import {
   Truck,
   ChevronLeft,
 } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
 
-const PrintingMachinesPage = () => {
+const PaperCuttingMachinesPage = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [activeProduct, setActiveProduct] = useState(null);
   const [currentImageIndex, setCurrentImageIndex] = useState({});
@@ -25,12 +24,12 @@ const PrintingMachinesPage = () => {
   const products = [
     {
       id: 1,
-      name: "Komori 2 Color Offset Printing Machine",
+      name: "Polar 137 EMC Paper Cutting Machine",
       images: [
-        "https://5.imimg.com/data5/SELLER/Default/2023/6/316243772/IS/XR/HV/29805837/new-product-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/389326264/DL/UG/ML/29805837/machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/389326271/AP/WD/HO/29805837/machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/389326280/FT/ZR/RV/29805837/machine-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/389284558/YK/MJ/SO/29805837/rapid-prototype-machine-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/389284550/RR/IS/SF/29805837/rapid-prototype-machine-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/389284562/BB/HO/BT/29805837/rapid-prototype-machine-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/389284553/BN/UL/ST/29805837/rapid-prototype-machine-500x500.jpeg",
       ],
       description:
         "High-precision Komori 2-color offset printing machine designed for exceptional print quality and reliability. Perfect for commercial printing operations requiring consistent results.",
@@ -45,12 +44,12 @@ const PrintingMachinesPage = () => {
     },
     {
       id: 2,
-      name: "2 Colour Heidelberg Sorsz Offset Printing Machine",
+      name: "Paper Core Cutting Machine",
       images: [
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/394184613/XY/EE/QG/29805837/2-colour-heidelberg-sorsz-offset-printing-machine-500x500.jpg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/394184672/MM/JY/HU/29805837/2-colour-heidelberg-sorsz-offset-printing-machine-500x500.jpg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/394184617/MO/ML/BD/29805837/2-colour-heidelberg-sorsz-offset-printing-machine-500x500.jpg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/394184621/GN/AZ/SV/29805837/2-colour-heidelberg-sorsz-offset-printing-machine-500x500.jpg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/389285212/FE/ND/JA/29805837/mini-offset-printing-machine-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/389285213/GW/WS/UM/29805837/mini-offset-printing-machine-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/389285253/RQ/MS/FS/29805837/mini-offset-printing-machine-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/389285228/VK/UB/VS/29805837/mini-offset-printing-machine-500x500.jpeg",
       ],
       description:
         "Professional-grade Heidelberg Sorsz 2-color offset printing machine offering superior print quality with advanced automation features for enhanced productivity.",
@@ -65,12 +64,12 @@ const PrintingMachinesPage = () => {
     },
     {
       id: 3,
-      name: "Heidelberg CD 102-6 LX Offset Printing Machine",
+      name: "Polar 55 EM Paper Cutting Machine",
       images: [
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/393739791/FT/GN/JG/29805837/printing-machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/393739797/LQ/OH/LC/29805837/printing-machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/393739804/YZ/HD/EB/29805837/printing-machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/393739807/PS/QW/XS/29805837/printing-machine-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/389317861/EK/SA/CV/29805837/cutting-machine-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/389317874/QL/WZ/QL/29805837/cutting-machine-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/389317858/MH/TS/AZ/29805837/cutting-machine-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/389317859/CI/HN/WH/29805837/cutting-machine-500x500.jpeg",
       ],
       description:
         "State-of-the-art Heidelberg CD 102-6 LX featuring 6-color capability with advanced technology for high-volume commercial printing operations.",
@@ -85,12 +84,12 @@ const PrintingMachinesPage = () => {
     },
     {
       id: 4,
-      name: "Heidelberg GTO 52 VP Offset Printing Machine",
+      name: "32 Inch Manual Paper Cutting Machine",
       images: [
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/393739249/VE/YO/QC/29805837/whatsapp-image-2024-02-27-at-9-12-11-am-1-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/393739244/XK/BK/KG/29805837/whatsapp-image-2024-02-27-at-9-12-12-am-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/393739252/PO/QZ/GO/29805837/whatsapp-image-2024-02-27-at-9-12-11-am-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/393739244/XK/BK/KG/29805837/whatsapp-image-2024-02-27-at-9-12-12-am-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/394180606/SN/RT/FA/29805837/32-inch-manually-paper-cutting-machine-500x500.jpg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/394180606/SN/RT/FA/29805837/32-inch-manually-paper-cutting-machine-500x500.jpg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/394180606/SN/RT/FA/29805837/32-inch-manually-paper-cutting-machine-500x500.jpg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/394180606/SN/RT/FA/29805837/32-inch-manually-paper-cutting-machine-500x500.jpg",
       ],
       description:
         "Compact and efficient Heidelberg GTO 52 VP perfect for small to medium print runs with exceptional versatility and print quality.",
@@ -130,267 +129,7 @@ const PrintingMachinesPage = () => {
         "https://5.imimg.com/data5/SELLER/Default/2024/2/389314246/UX/UB/FV/29805837/bobst-die-cutting-machine-500x500.jpeg",
         "https://5.imimg.com/data5/SELLER/Default/2024/2/389314249/EQ/UK/ER/29805837/bobst-die-cutting-machine-500x500.jpeg",
         "https://5.imimg.com/data5/SELLER/Default/2024/2/389314243/WK/XW/VC/29805837/bobst-die-cutting-machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/389314245/PT/UN/FZ/29805837/bobst-die-cutting-machine-500x500.jpeg",
-      ],
-      description:
-        "Reliable Heidelberg single color printing machine ideal for monochrome printing tasks with consistent quality and operational efficiency.",
-      features: [
-        "Single Color",
-        "Reliable Performance",
-        "Cost Effective",
-        "Easy Maintenance",
-      ],
-      price: "Get Latest Price",
-      originalPrice: "₹15,00,000",
-    },
-    {
-      id: 7,
-      name: "Heidelberg CD-74 Offset Printing Machine",
-      images: [
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/391350931/ZW/CO/DF/29805837/machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/391350940/XS/OQ/CB/29805837/machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/391350937/VW/RK/ZQ/29805837/machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/391350933/IA/ST/XQ/29805837/machine-500x500.jpeg",
-      ],
-      description:
-        "Reliable Heidelberg single color printing machine ideal for monochrome printing tasks with consistent quality and operational efficiency.",
-      features: [
-        "Single Color",
-        "Reliable Performance",
-        "Cost Effective",
-        "Easy Maintenance",
-      ],
-      price: "Get Latest Price",
-      originalPrice: "₹15,00,000",
-    },
-    {
-      id: 8,
-      name: "Komori Spica 429 2009 Model Offset Printing Machine",
-      images: [
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/393903414/NQ/ZO/TT/29805837/komori-spica-429-printing-machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/393903395/GQ/DL/HZ/29805837/komori-spica-429-printing-machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/393903393/XR/CD/KV/29805837/komori-spica-429-printing-machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/393903410/QI/AH/VD/29805837/komori-spica-429-printing-machine-500x500.jpeg",
-      ],
-      description:
-        "Reliable Heidelberg single color printing machine ideal for monochrome printing tasks with consistent quality and operational efficiency.",
-      features: [
-        "Single Color",
-        "Reliable Performance",
-        "Cost Effective",
-        "Easy Maintenance",
-      ],
-      price: "Get Latest Price",
-      originalPrice: "₹15,00,000",
-    },
-    {
-      id: 9,
-      name: "Komori Spica 429 Offset Printing Machine",
-      images: [
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/393902225/JY/BN/LE/29805837/komori-spica-429-offset-printing-machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/393902239/LS/YO/OT/29805837/komori-spica-429-offset-printing-machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/393902247/DC/SW/KU/29805837/komori-spica-429-offset-printing-machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/393902271/NI/WY/BN/29805837/komori-spica-429-offset-printing-machine-500x500.jpeg",
-      ],
-      description:
-        "Reliable Heidelberg single color printing machine ideal for monochrome printing tasks with consistent quality and operational efficiency.",
-      features: [
-        "Single Color",
-        "Reliable Performance",
-        "Cost Effective",
-        "Easy Maintenance",
-      ],
-      price: "Get Latest Price",
-      originalPrice: "₹15,00,000",
-    },
-    {
-      id: 10,
-      name: "Polly 266 Offset Printing Machine",
-      images: [
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/393740267/OH/JQ/RW/29805837/poly-266-year-1997-conventional-dampening-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/393740257/QE/RY/MI/29805837/poly-266-year-1997-conventional-dampening-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/393740277/NH/RU/NM/29805837/poly-266-year-1997-conventional-dampening-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/393740280/RL/KZ/UL/29805837/poly-266-year-1997-conventional-dampening-500x500.jpeg",
-      ],
-      description:
-        "Reliable Heidelberg single color printing machine ideal for monochrome printing tasks with consistent quality and operational efficiency.",
-      features: [
-        "Single Color",
-        "Reliable Performance",
-        "Cost Effective",
-        "Easy Maintenance",
-      ],
-      price: "Get Latest Price",
-      originalPrice: "₹15,00,000",
-    },
-    {
-      id: 11,
-      name: "508 Web Offset Printing Machine",
-      images: [
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/389415115/ER/PV/TL/29805837/whatsapp-image-2024-02-16-at-8-17-58-pm-1-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/389415122/DU/XD/IX/29805837/whatsapp-image-2024-02-16-at-8-17-57-pm-1-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/389415124/GI/RQ/TF/29805837/whatsapp-image-2024-02-16-at-8-17-57-pm-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/389415121/AM/KX/QQ/29805837/whatsapp-image-2024-02-16-at-8-17-58-pm-500x500.jpeg",
-      ],
-      description:
-        "Reliable Heidelberg single color printing machine ideal for monochrome printing tasks with consistent quality and operational efficiency.",
-      features: [
-        "Single Color",
-        "Reliable Performance",
-        "Cost Effective",
-        "Easy Maintenance",
-      ],
-      price: "Get Latest Price",
-      originalPrice: "₹15,00,000",
-    },
-    {
-      id: 12,
-      name: "Heidelberg SM 74 Offset Printing Machine",
-      images: [
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/389410688/CG/PE/JA/29805837/printing-machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/389410691/WR/QA/ZS/29805837/printing-machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/389410697/VA/WB/XQ/29805837/printing-machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/389410691/WR/QA/ZS/29805837/printing-machine-500x500.jpeg",
-      ],
-      description:
-        "Reliable Heidelberg single color printing machine ideal for monochrome printing tasks with consistent quality and operational efficiency.",
-      features: [
-        "Single Color",
-        "Reliable Performance",
-        "Cost Effective",
-        "Easy Maintenance",
-      ],
-      price: "Get Latest Price",
-      originalPrice: "₹15,00,000",
-    },
-    {
-      id: 13,
-      name: "Polly 4 Color Offset Printing Machine",
-      images: [
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/394182407/RB/WA/WJ/29805837/polly-4-color-offset-printing-machine-500x500.jpg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/394182870/QB/KU/PQ/29805837/polly-4-color-offset-printing-machine-500x500.jpg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/394182747/HL/MW/EE/29805837/polly-4-color-offset-printing-machine-500x500.jpg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/394182822/LS/DY/ZH/29805837/polly-4-color-offset-printing-machine-500x500.jpg",
-      ],
-      description:
-        "Reliable Heidelberg single color printing machine ideal for monochrome printing tasks with consistent quality and operational efficiency.",
-      features: [
-        "Single Color",
-        "Reliable Performance",
-        "Cost Effective",
-        "Easy Maintenance",
-      ],
-      price: "Get Latest Price",
-      originalPrice: "₹15,00,000",
-    },
-    {
-      id: 14,
-      name: "Adast Dominant 745 C Offset Printing Machine",
-      images: [
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/389280880/IA/SY/AX/29805837/compressor-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/389280879/LC/JP/GG/29805837/compressor-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/389280947/OL/NC/TJ/29805837/compressor-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/389280880/IA/SY/AX/29805837/compressor-500x500.jpeg",
-      ],
-      description:
-        "Reliable Heidelberg single color printing machine ideal for monochrome printing tasks with consistent quality and operational efficiency.",
-      features: [
-        "Single Color",
-        "Reliable Performance",
-        "Cost Effective",
-        "Easy Maintenance",
-      ],
-      price: "Get Latest Price",
-      originalPrice: "₹15,00,000",
-    },
-    {
-      id: 15,
-      name: "Komori Lithrone 426 Offset Printing Machine",
-      images: [
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/393901438/KA/QG/OD/29805837/komori-lithrone-426-offset-machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/393901447/EN/MW/AT/29805837/komori-lithrone-426-offset-machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/393901438/KA/QG/OD/29805837/komori-lithrone-426-offset-machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/393901447/EN/MW/AT/29805837/komori-lithrone-426-offset-machine-500x500.jpeg",
-      ],
-      description:
-        "Reliable Heidelberg single color printing machine ideal for monochrome printing tasks with consistent quality and operational efficiency.",
-      features: [
-        "Single Color",
-        "Reliable Performance",
-        "Cost Effective",
-        "Easy Maintenance",
-      ],
-      price: "Get Latest Price",
-      originalPrice: "₹15,00,000",
-    },
-    {
-      id: 16,
-      name: "Komori Lithrone 428 Offset Printing Machine",
-      images: [
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/393738864/GX/RQ/FA/29805837/whatsapp-image-2024-02-27-at-9-12-09-am-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/393738864/GX/RQ/FA/29805837/whatsapp-image-2024-02-27-at-9-12-09-am-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/393738864/GX/RQ/FA/29805837/whatsapp-image-2024-02-27-at-9-12-09-am-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/393738864/GX/RQ/FA/29805837/whatsapp-image-2024-02-27-at-9-12-09-am-500x500.jpeg",
-      ],
-      description:
-        "Reliable Heidelberg single color printing machine ideal for monochrome printing tasks with consistent quality and operational efficiency.",
-      features: [
-        "Single Color",
-        "Reliable Performance",
-        "Cost Effective",
-        "Easy Maintenance",
-      ],
-      price: "Get Latest Price",
-      originalPrice: "₹15,00,000",
-    },
-    {
-      id: 17,
-      name: "Komori L 426 Offset Printing Machine",
-      images: [
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/389325566/YH/HK/UP/29805837/printing-machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/389325566/YH/HK/UP/29805837/printing-machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/389325566/YH/HK/UP/29805837/printing-machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/389325566/YH/HK/UP/29805837/printing-machine-500x500.jpeg",
-      ],
-      description:
-        "Reliable Heidelberg single color printing machine ideal for monochrome printing tasks with consistent quality and operational efficiency.",
-      features: [
-        "Single Color",
-        "Reliable Performance",
-        "Cost Effective",
-        "Easy Maintenance",
-      ],
-      price: "Get Latest Price",
-      originalPrice: "₹15,00,000",
-    },
-    {
-      id: 18,
-      name: "Bobst Sp 102 E Offset Printing Machine",
-      images: [
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/393885055/JU/XX/XT/29805837/bobst-sp-102-e-printing-machine-500x500.jpg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/393885055/JU/XX/XT/29805837/bobst-sp-102-e-printing-machine-500x500.jpg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/393885055/JU/XX/XT/29805837/bobst-sp-102-e-printing-machine-500x500.jpg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/393885055/JU/XX/XT/29805837/bobst-sp-102-e-printing-machine-500x500.jpg",
-      ],
-      description:
-        "Reliable Heidelberg single color printing machine ideal for monochrome printing tasks with consistent quality and operational efficiency.",
-      features: [
-        "Single Color",
-        "Reliable Performance",
-        "Cost Effective",
-        "Easy Maintenance",
-      ],
-      price: "Get Latest Price",
-      originalPrice: "₹15,00,000",
-    },
-    {
-      id: 19,
-      name: "Heidelberg Single Color Printing Machine",
-      images: [
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/389280391/NY/AN/HK/29805837/paper-printing-machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/389280390/UN/SI/RC/29805837/paper-printing-machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/389280394/KZ/JO/UY/29805837/paper-printing-machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/389280400/ME/SS/TK/29805837/paper-printing-machine-500x500.jpeg",
+        "https://via.placeholder.com/600x400/EF4444/FFFFFF?text=Single+Color+Output",
       ],
       description:
         "Reliable Heidelberg single color printing machine ideal for monochrome printing tasks with consistent quality and operational efficiency.",
@@ -434,22 +173,6 @@ const PrintingMachinesPage = () => {
     },
   };
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prev) => {
-        const updatedIndexes = { ...prev };
-        products.forEach((product) => {
-          const currentIndex = prev[product.id] || 0;
-          updatedIndexes[product.id] =
-            (currentIndex + 1) % product.images.length;
-        });
-        return updatedIndexes;
-      });
-    }, 3000); // 3 seconds per slide
-
-    return () => clearInterval(interval);
-  }, [products]);
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-white to-blue-50">
       {/* SEO Meta Tags */}
@@ -482,7 +205,7 @@ const PrintingMachinesPage = () => {
               Anamika Machineries
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto">
-              Premium Printing Machines for Professional Excellence
+              Premium Paper Cutting Machine for Professional Excellence
             </p>
             <div className="flex justify-center items-center gap-6 mb-8">
               <div className="flex items-center gap-2">
@@ -514,11 +237,14 @@ const PrintingMachinesPage = () => {
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800">
               Our Range Of&nbsp;
-              <span className="text-blue-600">Printing Machines</span>
+              <span className="text-blue-600">Paper Cutting Machines</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Discover our comprehensive collection of world-class printing
-              machines from industry leaders Heidelberg and Komori
+              Providing you the best range of Polar 137 EMC Paper Cutting
+              Machine, Paper Core Cutting Machine, Polar 55 EM Paper Cutting
+              Machine, 32 Inch Manual Paper Cutting Machine, High Speed Rotary
+              Sheet Cutter Machine and Automatic Paper Cutting Machine with
+              effective & timely delivery.
             </p>
           </div>
 
@@ -536,15 +262,13 @@ const PrintingMachinesPage = () => {
                 onMouseLeave={() => setActiveProduct(null)}
               >
                 <div className="relative overflow-hidden group">
-                  <AnimatePresence mode="sync">
-                    <motion.img
-                      src={product.images[currentImageIndex[product.id] || 0]}
-                      alt={`${product.name} - Image ${
-                        (currentImageIndex[product.id] || 0) + 1
-                      }`}
-                      className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
-                  </AnimatePresence>
+                  <img
+                    src={product.images[currentImageIndex[product.id] || 0]}
+                    alt={`${product.name} - Image ${
+                      (currentImageIndex[product.id] || 0) + 1
+                    }`}
+                    className="w-full h-96 object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
 
                   {/* Image Navigation */}
                   <div className="absolute inset-0 flex items-center justify-between px-2 md:opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -608,11 +332,11 @@ const PrintingMachinesPage = () => {
                 </div>
 
                 <div className="p-6">
-                  <h3 className="text-xl font-sans font-bold mb-3 text-gray-800 group-hover:text-orange-600 transition-colors duration-300">
+                  <h3 className="text-xl font-bold mb-3 text-gray-800 group-hover:text-blue-600 transition-colors duration-300">
                     {product.name}
                   </h3>
 
-                  <p className="text-gray-600 mb-4 text-xl leading-relaxed">
+                  <p className="text-gray-600 mb-4 text-sm leading-relaxed">
                     {product.description}
                   </p>
 
@@ -754,4 +478,4 @@ const PrintingMachinesPage = () => {
   );
 };
 
-export default PrintingMachinesPage;
+export default PaperCuttingMachinesPage;

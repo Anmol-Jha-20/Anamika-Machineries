@@ -14,6 +14,8 @@ import {
   Package,
   Printer,
   Settings,
+  Newspaper,
+  FoldHorizontal,
 } from "lucide-react";
 
 const AboutPage = () => {
@@ -65,12 +67,27 @@ const AboutPage = () => {
     },
     {
       icon: Settings,
-      name: "Folding Machines",
+      name: "Pasting Machine",
       desc: "Precision folding machinery",
     },
     {
       icon: Wrench,
-      name: "Finishing Equipment",
+      name: "Die Cutting Machine",
+      desc: "Complete finishing solutions",
+    },
+    {
+      icon: Newspaper,
+      name: "Paper Cutting Machine",
+      desc: "Complete finishing solutions",
+    },
+    {
+      icon: FoldHorizontal,
+      name: "Folding Machine",
+      desc: "Complete finishing solutions",
+    },
+    {
+      icon: Wrench,
+      name: "Trimming Machine",
       desc: "Complete finishing solutions",
     },
   ];
@@ -461,10 +478,10 @@ const AboutPage = () => {
                 <Phone className="w-5 h-5" />
                 Contact Us Today
               </button>
-              <button className="bg-white/10 hover:bg-white/20 text-white border-2 border-white/30 hover:border-white/50 font-bold py-4 px-8 rounded-full backdrop-blur-sm transition-all duration-300 flex items-center justify-center gap-3">
+              {/* <button className="bg-white/10 hover:bg-white/20 text-white border-2 border-white/30 hover:border-white/50 font-bold py-4 px-8 rounded-full backdrop-blur-sm transition-all duration-300 flex items-center justify-center gap-3">
                 View Our Products
                 <ArrowRight className="w-5 h-5" />
-              </button>
+              </button> */}
             </div>
           </div>
         </div>

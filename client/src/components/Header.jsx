@@ -316,7 +316,9 @@ const Header = () => {
                     {menuItems[0].submenu.map((category, idx) => (
                       <div key={idx}>
                         <div className="text-gray-600 border-white hover:text-orange-500 font-semibold text-sm mb-2 hover:border-l-4 hover:border-orange-500 pl-3">
-                          {category.category}
+                          <button onClick={() => navigate(category.link)}>
+                            {category.category}
+                          </button>
                         </div>
                         <div className="ml-7 space-y-1">
                           {category.items.map((item, itemIdx) => (
@@ -374,7 +376,7 @@ const Header = () => {
               </div> */}
 
               <a
-                href="#"
+                href="/gallery"
                 className="block text-gray-700 uppercase font-semibold py-2 hover:text-orange-500 transition-colors"
               >
                 Gallery

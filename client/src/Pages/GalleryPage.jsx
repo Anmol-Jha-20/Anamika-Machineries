@@ -21,7 +21,7 @@ const AnamikaGallery = () => {
     {
       id: 1,
       title: "Printing machine",
-      category: "Printing machine",
+      category: "Printing-machine",
       description:
         "High precision CNC machining center for complex manufacturing",
       image:
@@ -30,74 +30,74 @@ const AnamikaGallery = () => {
     },
     {
       id: 2,
-      title: "Industrial Lathe Machine",
-      category: "lathe-machines",
+      title: "Perfect Binding Machine",
+      category: "Perfect-Binding-Machine",
       description: "Heavy duty industrial lathe for metal working operations",
       image:
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&h=400&fit=crop",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/389414585/TE/QR/FD/29805837/brinder-trimmer-machine-500x500.jpeg",
       tags: ["metalworking", "industrial", "lathe"],
     },
     {
       id: 3,
-      title: "Milling Machine Setup",
-      category: "milling-machines",
+      title: "Pasting Machine",
+      category: "Pasting-Machine",
       description: "Professional milling machine for precision cutting",
       image:
-        "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?w=600&h=400&fit=crop",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/394181020/JN/GT/KR/29805837/4-fold-side-lock-bottom-carton-paste-machine-500x500.jpg",
       tags: ["milling", "precision", "cutting"],
     },
     {
       id: 4,
-      title: "Automated Assembly Line",
-      category: "automation",
+      title: "Die Cutting Machine",
+      category: "Die-Cutting-Machine",
       description: "Fully automated assembly line for efficient production",
       image:
-        "https://images.unsplash.com/photo-1581093458791-9d42e000c6c8?w=600&h=400&fit=crop",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/391350744/PF/QR/NA/29805837/cross-land-dai-30-40-machine-500x500.jpeg",
       tags: ["automation", "assembly", "production"],
     },
     {
       id: 5,
-      title: "Quality Control Station",
-      category: "quality-control",
+      title: "Paper Cutting Machine",
+      category: "Paper-Cutting-Machine",
       description: "Advanced quality control and inspection equipment",
       image:
-        "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&h=400&fit=crop",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/389284558/YK/MJ/SO/29805837/rapid-prototype-machine-500x500.jpeg",
       tags: ["quality", "inspection", "control"],
     },
     {
       id: 6,
-      title: "Hydraulic Press Machine",
-      category: "press-machines",
+      title: "Folding Machine",
+      category: "Folding-Machine",
       description: "Heavy duty hydraulic press for metal forming",
       image:
-        "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600&h=400&fit=crop",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/389314914/BN/RW/RS/29805837/used-polar-92-paper-cutting-machine-500x500.jpeg",
       tags: ["hydraulic", "press", "forming"],
     },
     {
       id: 7,
-      title: "Grinding Machine",
-      category: "grinding-machines",
+      title: "Trimming Machine",
+      category: "Trimming-Machine",
       description: "Precision grinding machine for surface finishing",
       image:
-        "https://images.unsplash.com/photo-1581093458791-9d42e000c6c8?w=600&h=400&fit=crop",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/389324392/QR/NM/CW/29805837/offset-printing-machines-500x500.jpeg",
       tags: ["grinding", "finishing", "precision"],
     },
     {
       id: 8,
-      title: "Welding Equipment",
+      title: "Heidelberg CD 102-6 LX Offset Printing Machine",
       category: "welding",
       description: "Professional welding equipment and setup",
       image:
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&h=400&fit=crop",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/393739791/FT/GN/JG/29805837/printing-machine-500x500.jpeg",
       tags: ["welding", "fabrication", "metalwork"],
     },
     {
       id: 9,
-      title: "Testing Laboratory",
+      title: "6 Clamp Wellbound Perfect Binding Machine",
       category: "testing",
       description: "Materials testing and analysis laboratory",
       image:
-        "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&h=400&fit=crop",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/394187554/YT/HV/EG/29805837/wellbound-clamp-perfect-binder-500x500.jpg",
       tags: ["testing", "analysis", "laboratory"],
     },
   ];
@@ -105,33 +105,48 @@ const AnamikaGallery = () => {
   const categories = [
     { id: "all", name: "All Machines", count: galleryData.length },
     {
-      id: "Printing machine",
+      id: "Printing-machine",
       name: "Printing machine",
-      count: galleryData.filter((item) => item.category === "cnc-machines")
+      count: galleryData.filter((item) => item.category === "Printing-machine")
         .length,
     },
     {
-      id: "lathe-machines",
-      name: "Lathe Machines",
-      count: galleryData.filter((item) => item.category === "lathe-machines")
+      id: "Perfect-Binding-Machine",
+      name: "Perfect Binding Machine",
+      count: galleryData.filter(
+        (item) => item.category === "Perfect-Binding-Machine"
+      ).length,
+    },
+    {
+      id: "Pasting-Machine",
+      name: "Pasting Machine",
+      count: galleryData.filter((item) => item.category === "Pasting-Machine")
         .length,
     },
     {
-      id: "milling-machines",
-      name: "Milling Machines",
-      count: galleryData.filter((item) => item.category === "milling-machines")
+      id: "Die-Cutting-Machine",
+      name: "Die Cutting Machine",
+      count: galleryData.filter(
+        (item) => item.category === "Die-Cutting-Machine"
+      ).length,
+    },
+    {
+      id: "Paper-Cutting-Machine",
+      name: "Paper Cutting Machine",
+      count: galleryData.filter(
+        (item) => item.category === "Paper-Cutting-Machine"
+      ).length,
+    },
+    {
+      id: "Folding-Machine",
+      name: "Folding Machine",
+      count: galleryData.filter((item) => item.category === "Folding-Machine")
         .length,
     },
     {
-      id: "automation",
-      name: "Automation",
-      count: galleryData.filter((item) => item.category === "automation")
-        .length,
-    },
-    {
-      id: "quality-control",
-      name: "Quality Control",
-      count: galleryData.filter((item) => item.category === "quality-control")
+      id: "Trimming-Machine",
+      name: "Trimming Machine",
+      count: galleryData.filter((item) => item.category === "Trimming-Machine")
         .length,
     },
   ];
@@ -273,7 +288,7 @@ const AnamikaGallery = () => {
                   placeholder="Search machines, equipment..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-40 pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 />
               </div>
 

@@ -85,7 +85,7 @@ const AnamikaGallery = () => {
     {
       id: 8,
       title: "Heidelberg CD 102-6 LX Offset Printing Machine",
-      category: "welding",
+      category: "Printing-machine",
       description: "Professional welding equipment and setup",
       image:
         "https://5.imimg.com/data5/SELLER/Default/2024/2/393739791/FT/GN/JG/29805837/printing-machine-500x500.jpeg",
@@ -94,7 +94,7 @@ const AnamikaGallery = () => {
     {
       id: 9,
       title: "6 Clamp Wellbound Perfect Binding Machine",
-      category: "testing",
+      category: "Perfect-Binding-Machine",
       description: "Materials testing and analysis laboratory",
       image:
         "https://5.imimg.com/data5/SELLER/Default/2024/2/394187554/YT/HV/EG/29805837/wellbound-clamp-perfect-binder-500x500.jpg",

@@ -11,6 +11,7 @@ import {
   Truck,
   ChevronLeft,
 } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const PaperCuttingMachinesPage = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -193,6 +194,22 @@ const PaperCuttingMachinesPage = () => {
     },
   };
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prev) => {
+        const updatedIndexes = { ...prev };
+        products.forEach((product) => {
+          const currentIndex = prev[product.id] || 0;
+          updatedIndexes[product.id] =
+            (currentIndex + 1) % product.images.length;
+        });
+        return updatedIndexes;
+      });
+    }, 3000); // 3 seconds per slide
+
+    return () => clearInterval(interval);
+  }, [products]);
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-white to-blue-50">
       {/* SEO Meta Tags */}
@@ -282,13 +299,15 @@ const PaperCuttingMachinesPage = () => {
                 onMouseLeave={() => setActiveProduct(null)}
               >
                 <div className="relative overflow-hidden group">
-                  <img
-                    src={product.images[currentImageIndex[product.id] || 0]}
-                    alt={`${product.name} - Image ${
-                      (currentImageIndex[product.id] || 0) + 1
-                    }`}
-                    className="w-full h-96 object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
+                  <AnimatePresence mode="sync">
+                    <motion.img
+                      src={product.images[currentImageIndex[product.id] || 0]}
+                      alt={`${product.name} - Image ${
+                        (currentImageIndex[product.id] || 0) + 1
+                      }`}
+                      className="w-full h-96 object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                  </AnimatePresence>
 
                   {/* Image Navigation */}
                   <div className="absolute inset-0 flex items-center justify-between px-2 md:opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -388,7 +407,10 @@ const PaperCuttingMachinesPage = () => {
                         </div>
                       )} */}
                     </div>
-                    <button className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-700 hover:to-orange-800 text-white px-6 py-2 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center gap-2 group">
+                    <button
+                      onClick={() => (window.location.href = "tel:8051448069")}
+                      className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-700 hover:to-orange-800 text-white px-6 py-2 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center gap-2 group"
+                    >
                       Contact Us
                       <ChevronRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
                     </button>
@@ -488,7 +510,10 @@ const PaperCuttingMachinesPage = () => {
           </div>
 
           <div className="text-center mt-12">
-            <button className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+            <button
+              onClick={() => (window.location.href = "tel:8051448069")}
+              className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 cursor-pointer text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+            >
               Get Free Quote Today
             </button>
           </div>

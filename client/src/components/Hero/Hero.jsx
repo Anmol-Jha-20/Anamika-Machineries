@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
+  const navigate = useNavigate();
 
   const slides = [
     {
@@ -14,7 +16,7 @@ const HeroSection = () => {
       subtitle:
         "Delivering high-quality printing, binding, folding, and finishing machines to businesses across Bihar and beyond. With years of expertise and a customer-first approach, Anamika Machineries is your trusted source for reliable industrial equipment at competitive wholesale prices.",
       primaryButton: "LEARN MORE",
-      secondaryButton: "OUR PRODUCTS",
+      secondaryButton: "CONTACT US",
       backgroundImage:
         "https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
       overlayOpacity: "bg-black/50",
@@ -27,7 +29,7 @@ const HeroSection = () => {
       subtitle:
         "Discover a wide range of advanced printing machines designed for speed, precision, and durability. At Anamika Machineries, we offer reliable and cost-effective printing solutions that meet the needs of commercial printers, packaging units, and publishing houses. Whether you're looking for offset, digital, or screen printing equipment, our machines ensure consistent quality and optimal performance—backed by expert support and trusted service since 2017.",
       primaryButton: "LEARN MORE",
-      secondaryButton: "OUR PRODUCTS",
+      secondaryButton: "CONTACT US",
       backgroundImage:
         "https://5.imimg.com/data5/SELLER/Default/2024/2/393739791/FT/GN/JG/29805837/printing-machine-500x500.jpeg",
       overlayOpacity: "bg-black/40",
@@ -40,7 +42,7 @@ const HeroSection = () => {
       subtitle:
         "Experience seamless finishing with our range of durable and efficient binding machines. At Anamika Machineries, we supply high-quality binding equipment designed to handle diverse volumes and binding types, ensuring professional results every time. Trusted by businesses across Bihar since 2017, our machines combine precision engineering with ease of use to streamline your production process.",
       primaryButton: "LEARN MORE",
-      secondaryButton: "OUR PRODUCTS",
+      secondaryButton: "CONTACT US",
       backgroundImage:
         "https://5.imimg.com/data5/SELLER/Default/2024/2/389414587/JL/HV/FT/29805837/brinder-trimmer-machine-500x500.jpeg",
       overlayOpacity: "bg-black/45",
@@ -180,10 +182,16 @@ const HeroSection = () => {
                 variants={itemVariants}
                 className="flex flex-col sm:flex-row gap-4 justify-center items-center"
               >
-                <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-4 rounded transition-all duration-300 transform hover:scale-105 hover:shadow-lg w-full sm:w-auto">
+                <button
+                  onClick={() => navigate("/about-us")}
+                  className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-4 rounded transition-all duration-300 transform hover:scale-105 hover:shadow-lg w-full sm:w-auto"
+                >
                   {slides[currentSlide].primaryButton}
                 </button>
-                <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-4 rounded transition-all duration-300 transform hover:scale-105 hover:shadow-lg w-full sm:w-auto">
+                <button
+                  onClick={() => (window.location.href = "tel:8051448069")}
+                  className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-4 rounded transition-all duration-300 transform hover:scale-105 hover:shadow-lg w-full sm:w-auto"
+                >
                   {slides[currentSlide].secondaryButton}
                 </button>
               </motion.div>

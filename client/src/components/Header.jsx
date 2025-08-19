@@ -316,7 +316,15 @@ const Header = () => {
                     {menuItems[0].submenu.map((category, idx) => (
                       <div key={idx}>
                         <div className="text-gray-600 border-white hover:text-orange-500 font-semibold text-sm mb-2 hover:border-l-4 hover:border-orange-500 pl-3">
-                          <button onClick={() => navigate(category.link)}>
+                          <button
+                            onClick={() => {
+                              navigate(category.link);
+                              setTimeout(() => {
+                                setMobileActiveMenu(null);
+                                setMobileMenuOpen(false);
+                              }, 100);
+                            }}
+                          >
                             {category.category}
                           </button>
                         </div>

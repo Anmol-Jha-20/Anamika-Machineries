@@ -1,7 +1,10 @@
 import React from "react";
 import { Play, ArrowUp } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const EnergyLandingPage = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header Section */}
@@ -36,7 +39,10 @@ const EnergyLandingPage = () => {
 
             {/* CTA Button */}
             <div className="pt-4">
-              <button className="group inline-flex items-center gap-4 bg-orange-500 hover:bg-orange-600 text-white px-6 py-4 rounded-full transition-all duration-300 hover:shadow-lg transform hover:-translate-y-1">
+              <button
+                onClick={() => navigate("/about-us")}
+                className="group inline-flex items-center gap-4 bg-orange-500 hover:bg-orange-600 text-white px-6 py-4 rounded-full transition-all duration-300 hover:shadow-lg transform hover:-translate-y-1"
+              >
                 {/* <div className="p-2 rounded-full">
                   <Play className="w-5 h-5 text-white fill-current" />
                 </div> */}

@@ -104,12 +104,12 @@ const PaperCuttingMachinesPage = () => {
     },
     {
       id: 5,
-      name: "Heidelberg SM 74 Offset Color Printing Machine",
+      name: "High Speed Rotary Sheet Cutter Machine",
       images: [
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/391351428/SW/CF/PH/29805837/machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/391351417/LJ/XM/MK/29805837/machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/391351426/SV/NI/ZP/29805837/machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/391351429/WL/DF/QC/29805837/machine-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/394185746/OK/UQ/JR/29805837/rotary-sheet-cutter-machine-500x500.jpg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/394185684/ES/BA/VW/29805837/rotary-sheet-cutter-machine-500x500.jpg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/394185690/KK/OW/GR/29805837/rotary-sheet-cutter-machine-500x500.jpg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/394185684/ES/BA/VW/29805837/rotary-sheet-cutter-machine-500x500.jpg",
       ],
       description:
         "Premium Heidelberg SM 74 color printing machine delivering outstanding color reproduction and efficiency for demanding commercial applications.",
@@ -124,12 +124,32 @@ const PaperCuttingMachinesPage = () => {
     },
     {
       id: 6,
-      name: "Heidelberg Single Color Printing Machine",
+      name: "Automatic Paper Cutting Machine",
       images: [
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/389314246/UX/UB/FV/29805837/bobst-die-cutting-machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/389314249/EQ/UK/ER/29805837/bobst-die-cutting-machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/389314243/WK/XW/VC/29805837/bobst-die-cutting-machine-500x500.jpeg",
-        "https://via.placeholder.com/600x400/EF4444/FFFFFF?text=Single+Color+Output",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/394032590/GS/DX/PN/29805837/automatic-paper-cutting-machine-500x500.jpg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/394032588/RC/VK/VX/29805837/automatic-paper-cutting-machine-500x500.jpg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/394032590/GS/DX/PN/29805837/automatic-paper-cutting-machine-500x500.jpg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/394032588/RC/VK/VX/29805837/automatic-paper-cutting-machine-500x500.jpg",
+      ],
+      description:
+        "Reliable Heidelberg single color printing machine ideal for monochrome printing tasks with consistent quality and operational efficiency.",
+      features: [
+        "Single Color",
+        "Reliable Performance",
+        "Cost Effective",
+        "Easy Maintenance",
+      ],
+      price: "Get Latest Price",
+      originalPrice: "₹15,00,000",
+    },
+    {
+      id: 7,
+      name: "Lamination Roll To Sheet Cutter",
+      images: [
+        "https://5.imimg.com/data5/ANDROID/Default/2024/7/436685211/QY/QQ/MK/29805837/product-jpeg-500x500.jpg",
+        "https://5.imimg.com/data5/ANDROID/Default/2024/7/436685078/ZV/AT/BJ/29805837/product-jpeg-500x500.jpg",
+        "https://5.imimg.com/data5/ANDROID/Default/2024/7/436685331/QM/QZ/CZ/29805837/product-jpeg-500x500.jpg",
+        "https://5.imimg.com/data5/ANDROID/Default/2024/7/436685135/DC/LZ/SI/29805837/product-jpeg-500x500.jpg",
       ],
       description:
         "Reliable Heidelberg single color printing machine ideal for monochrome printing tasks with consistent quality and operational efficiency.",

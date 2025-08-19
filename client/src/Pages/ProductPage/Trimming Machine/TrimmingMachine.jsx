@@ -11,6 +11,11 @@ import {
   Truck,
   ChevronLeft,
 } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import threeknifeimageone from "../../../assets/threeknifethree.jpeg";
+import threeknifeimagetwo from "../../../assets/threeknifeone.jpeg";
+import threeknifeimagethree from "../../../assets/threeknifesix.jpeg";
+import threeknifeimagefour from "../../../assets/threeknifetwo.jpeg";
 
 const TrimmingMachinesPage = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -24,123 +29,43 @@ const TrimmingMachinesPage = () => {
   const products = [
     {
       id: 1,
-      name: "Komori 2 Color Offset Printing Machine",
+      name: "SDY Three Knife Trimmer Machine",
       images: [
-        "https://5.imimg.com/data5/SELLER/Default/2023/6/316243772/IS/XR/HV/29805837/new-product-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/389326264/DL/UG/ML/29805837/machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/389326271/AP/WD/HO/29805837/machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/389326280/FT/ZR/RV/29805837/machine-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/389315696/MK/RS/SX/29805837/polar-90-ce-paper-cutter-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/389315697/AH/RO/TX/29805837/polar-90-ce-paper-cutter-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/389315699/SV/WO/IB/29805837/polar-90-ce-paper-cutter-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/389315703/JG/BX/JL/29805837/polar-90-ce-paper-cutter-500x500.jpeg",
       ],
       description:
-        "High-precision Komori 2-color offset printing machine designed for exceptional print quality and reliability. Perfect for commercial printing operations requiring consistent results.",
+        "The SDY Three-Knife Trimmer, imported from Europe and often associated with the Perfecta BP SDY or SDY TS model, is a high-performance, precision trimming machine designed for offline bookbinding and finishing applications. Built on a robust cast-iron frame, it ensures durability and consistent output, making it ideal for small to medium production runs.",
       features: [
         "2-Color Printing",
         "High Speed Operation",
         "Precision Registration",
         "Auto Plate Loading",
       ],
-      price: "₹15,00,000",
+      price: "Get Latest Price",
       originalPrice: "₹55,00,000",
     },
     {
       id: 2,
-      name: "2 Colour Heidelberg Sorsz Offset Printing Machine",
+      name: "Three Knife Trimming Machine",
       images: [
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/394184613/XY/EE/QG/29805837/2-colour-heidelberg-sorsz-offset-printing-machine-500x500.jpg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/394184672/MM/JY/HU/29805837/2-colour-heidelberg-sorsz-offset-printing-machine-500x500.jpg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/394184617/MO/ML/BD/29805837/2-colour-heidelberg-sorsz-offset-printing-machine-500x500.jpg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/394184621/GN/AZ/SV/29805837/2-colour-heidelberg-sorsz-offset-printing-machine-500x500.jpg",
+        threeknifeimagetwo,
+        threeknifeimagefour,
+        threeknifeimageone,
+        threeknifeimagethree,
       ],
       description:
-        "Professional-grade Heidelberg Sorsz 2-color offset printing machine offering superior print quality with advanced automation features for enhanced productivity.",
+        "A Three-Knife Trimming Machine is a specialized post-press finishing device used primarily in the bookbinding and printing industry to precisely trim the three open sides (top, bottom, and face) of a bound book or printed stack in a single pass.",
       features: [
         "2-Color Configuration",
         "Advanced Automation",
         "Quick Job Changes",
         "Superior Print Quality",
       ],
-      price: "₹20,00,000",
+      price: "Get Latest Price",
       originalPrice: "₹45,00,000",
-    },
-    {
-      id: 3,
-      name: "Heidelberg CD 102-6 LX Offset Printing Machine",
-      images: [
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/393739791/FT/GN/JG/29805837/printing-machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/393739797/LQ/OH/LC/29805837/printing-machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/393739804/YZ/HD/EB/29805837/printing-machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/393739807/PS/QW/XS/29805837/printing-machine-500x500.jpeg",
-      ],
-      description:
-        "State-of-the-art Heidelberg CD 102-6 LX featuring 6-color capability with advanced technology for high-volume commercial printing operations.",
-      features: [
-        "6-Color Printing",
-        "Large Format",
-        "Advanced Controls",
-        "High Volume Output",
-      ],
-      price: "Get Latest Price",
-      originalPrice: "₹1,45,00,000",
-    },
-    {
-      id: 4,
-      name: "Heidelberg GTO 52 VP Offset Printing Machine",
-      images: [
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/393739249/VE/YO/QC/29805837/whatsapp-image-2024-02-27-at-9-12-11-am-1-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/393739244/XK/BK/KG/29805837/whatsapp-image-2024-02-27-at-9-12-12-am-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/393739252/PO/QZ/GO/29805837/whatsapp-image-2024-02-27-at-9-12-11-am-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/393739244/XK/BK/KG/29805837/whatsapp-image-2024-02-27-at-9-12-12-am-500x500.jpeg",
-      ],
-      description:
-        "Compact and efficient Heidelberg GTO 52 VP perfect for small to medium print runs with exceptional versatility and print quality.",
-      features: [
-        "Compact Design",
-        "Variable Print",
-        "Easy Operation",
-        "Quick Setup",
-      ],
-      price: "Get Latest Price",
-      originalPrice: "₹22,00,000",
-    },
-    {
-      id: 5,
-      name: "Heidelberg SM 74 Offset Color Printing Machine",
-      images: [
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/391351428/SW/CF/PH/29805837/machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/391351417/LJ/XM/MK/29805837/machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/391351426/SV/NI/ZP/29805837/machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/391351429/WL/DF/QC/29805837/machine-500x500.jpeg",
-      ],
-      description:
-        "Premium Heidelberg SM 74 color printing machine delivering outstanding color reproduction and efficiency for demanding commercial applications.",
-      features: [
-        "Multi-Color Printing",
-        "Premium Quality",
-        "Fast Production",
-        "Color Management",
-      ],
-      price: "Get Latest Price",
-      originalPrice: "₹85,00,000",
-    },
-    {
-      id: 6,
-      name: "Heidelberg Single Color Printing Machine",
-      images: [
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/389314246/UX/UB/FV/29805837/bobst-die-cutting-machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/389314249/EQ/UK/ER/29805837/bobst-die-cutting-machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/389314243/WK/XW/VC/29805837/bobst-die-cutting-machine-500x500.jpeg",
-        "https://via.placeholder.com/600x400/EF4444/FFFFFF?text=Single+Color+Output",
-      ],
-      description:
-        "Reliable Heidelberg single color printing machine ideal for monochrome printing tasks with consistent quality and operational efficiency.",
-      features: [
-        "Single Color",
-        "Reliable Performance",
-        "Cost Effective",
-        "Easy Maintenance",
-      ],
-      price: "Get Latest Price",
-      originalPrice: "₹15,00,000",
     },
   ];
 
@@ -172,6 +97,22 @@ const TrimmingMachinesPage = () => {
       },
     },
   };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prev) => {
+        const updatedIndexes = { ...prev };
+        products.forEach((product) => {
+          const currentIndex = prev[product.id] || 0;
+          updatedIndexes[product.id] =
+            (currentIndex + 1) % product.images.length;
+        });
+        return updatedIndexes;
+      });
+    }, 3000); // 3 seconds per slide
+
+    return () => clearInterval(interval);
+  }, [products]);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-white to-blue-50">
@@ -205,7 +146,7 @@ const TrimmingMachinesPage = () => {
               Anamika Machineries
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto">
-              Premium Printing Machines for Professional Excellence
+              Premium Trimming Machines for Professional Excellence
             </p>
             <div className="flex justify-center items-center gap-6 mb-8">
               <div className="flex items-center gap-2">
@@ -237,11 +178,11 @@ const TrimmingMachinesPage = () => {
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800">
               Our Range Of&nbsp;
-              <span className="text-blue-600">Printing Machines</span>
+              <span className="text-blue-600">Trimming Machines</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Discover our comprehensive collection of world-class printing
-              machines from industry leaders Heidelberg and Komori
+              Our range of products include SDY Three Knife Trimmer Machine and
+              Three Knife Trimming Machine.
             </p>
           </div>
 
@@ -259,13 +200,15 @@ const TrimmingMachinesPage = () => {
                 onMouseLeave={() => setActiveProduct(null)}
               >
                 <div className="relative overflow-hidden group">
-                  <img
-                    src={product.images[currentImageIndex[product.id] || 0]}
-                    alt={`${product.name} - Image ${
-                      (currentImageIndex[product.id] || 0) + 1
-                    }`}
-                    className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
+                  <AnimatePresence mode="sync">
+                    <motion.img
+                      src={product.images[currentImageIndex[product.id] || 0]}
+                      alt={`${product.name} - Image ${
+                        (currentImageIndex[product.id] || 0) + 1
+                      }`}
+                      className="w-full h-96 object-fill transition-transform duration-500 group-hover:scale-105"
+                    />
+                  </AnimatePresence>
 
                   {/* Image Navigation */}
                   <div className="absolute inset-0 flex items-center justify-between px-2 md:opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -329,7 +272,7 @@ const TrimmingMachinesPage = () => {
                 </div>
 
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-3 text-gray-800 group-hover:text-blue-600 transition-colors duration-300">
+                  <h3 className="text-xl font-bold mb-3 text-gray-800 group-hover:text-orange-600 transition-colors duration-300">
                     {product.name}
                   </h3>
 
@@ -365,7 +308,10 @@ const TrimmingMachinesPage = () => {
                         </div>
                       )} */}
                     </div>
-                    <button className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-6 py-2 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center gap-2 group">
+                    <button
+                      onClick={() => (window.location.href = "tel:8051448069")}
+                      className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-700 hover:to-orange-800 text-white px-6 py-2 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center gap-2 group"
+                    >
                       Contact Us
                       <ChevronRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
                     </button>
@@ -443,7 +389,7 @@ const TrimmingMachinesPage = () => {
               <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl hover:bg-white/20 transition-all duration-300">
                 <Phone className="w-8 h-8 mx-auto mb-4 text-yellow-400" />
                 <h3 className="font-bold mb-2">Call Us</h3>
-                <p className="text-blue-100">+91 XXXXX XXXXX</p>
+                <p className="text-blue-100">+91 80514 48069</p>
               </div>
             </div>
 
@@ -451,7 +397,7 @@ const TrimmingMachinesPage = () => {
               <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl hover:bg-white/20 transition-all duration-300">
                 <Mail className="w-8 h-8 mx-auto mb-4 text-yellow-400" />
                 <h3 className="font-bold mb-2">Email Us</h3>
-                <p className="text-blue-100">info@anamikamachineries.com</p>
+                <p className="text-blue-100">kshailesh712@gmail.com</p>
               </div>
             </div>
 
@@ -459,13 +405,18 @@ const TrimmingMachinesPage = () => {
               <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl hover:bg-white/20 transition-all duration-300">
                 <MapPin className="w-8 h-8 mx-auto mb-4 text-yellow-400" />
                 <h3 className="font-bold mb-2">Visit Us</h3>
-                <p className="text-blue-100">Your Location Here</p>
+                <p className="text-blue-100">
+                  Rampur Road, Near Ramratna Hospital Patna-800006, Bihar, India
+                </p>
               </div>
             </div>
           </div>
 
           <div className="text-center mt-12">
-            <button className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+            <button
+              onClick={() => (window.location.href = "tel:8051448069")}
+              className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+            >
               Get Free Quote Today
             </button>
           </div>

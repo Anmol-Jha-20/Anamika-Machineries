@@ -468,7 +468,12 @@ const PrintingMachinesPage = () => {
       </head> */}
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white">
+      <section
+        style={{
+          backgroundImage: `url("https://images.unsplash.com/photo-1642969164999-979483e21601?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")`,
+        }}
+        className="relative overflow-hidden bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white"
+      >
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="relative container mx-auto px-4 py-20">
           <div
@@ -644,7 +649,10 @@ const PrintingMachinesPage = () => {
                         </div>
                       )} */}
                     </div>
-                    <button className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-700 hover:to-orange-800 text-white px-6 py-2 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center gap-2 group">
+                    <button
+                      onClick={() => (window.location.href = "tel:8051448069")}
+                      className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-700 hover:to-orange-800 text-white px-6 py-2 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center gap-2 group"
+                    >
                       Contact Us
                       <ChevronRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
                     </button>
@@ -722,7 +730,7 @@ const PrintingMachinesPage = () => {
               <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl hover:bg-white/20 transition-all duration-300">
                 <Phone className="w-8 h-8 mx-auto mb-4 text-yellow-400" />
                 <h3 className="font-bold mb-2">Call Us</h3>
-                <p className="text-blue-100">+91 XXXXX XXXXX</p>
+                <p className="text-blue-100">+91 80514 48069</p>
               </div>
             </div>
 
@@ -730,7 +738,7 @@ const PrintingMachinesPage = () => {
               <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl hover:bg-white/20 transition-all duration-300">
                 <Mail className="w-8 h-8 mx-auto mb-4 text-yellow-400" />
                 <h3 className="font-bold mb-2">Email Us</h3>
-                <p className="text-blue-100">info@anamikamachineries.com</p>
+                <p className="text-blue-100">kshailesh712@gmail.com</p>
               </div>
             </div>
 
@@ -738,13 +746,18 @@ const PrintingMachinesPage = () => {
               <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl hover:bg-white/20 transition-all duration-300">
                 <MapPin className="w-8 h-8 mx-auto mb-4 text-yellow-400" />
                 <h3 className="font-bold mb-2">Visit Us</h3>
-                <p className="text-blue-100">Your Location Here</p>
+                <p className="text-blue-100">
+                  Rampur Road, Near Ramratna Hospital Patna-800006, Bihar, India
+                </p>
               </div>
             </div>
           </div>
 
           <div className="text-center mt-12">
-            <button className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+            <button
+              onClick={() => (window.location.href = "tel:8051448069")}
+              className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+            >
               Get Free Quote Today
             </button>
           </div>

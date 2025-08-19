@@ -128,7 +128,15 @@ const DieCuttingMachinesPage = () => {
       </head> */}
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white">
+      <section
+        style={{
+          backgroundImage: `url("https://img.freepik.com/free-photo/lasercut-industry_1098-13416.jpg?t=st=1755589183~exp=1755592783~hmac=6b3daf302dcaf43b1b6c8d6e36ff36211fc9b2d67b13d0c4a56c5a9482f2f051&w=1060")`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+        className="relative overflow-hidden bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white"
+      >
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="relative container mx-auto px-4 py-20">
           <div
@@ -202,7 +210,7 @@ const DieCuttingMachinesPage = () => {
                       alt={`${product.name} - Image ${
                         (currentImageIndex[product.id] || 0) + 1
                       }`}
-                      className="w-full h-96 object-fill transition-transform duration-500 group-hover:scale-105"
+                      className="w-full h-96 object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                   </AnimatePresence>
 

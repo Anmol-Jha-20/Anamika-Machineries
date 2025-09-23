@@ -12,6 +12,7 @@ import {
   ChevronLeft,
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import DieCuttingImage from "../../../assets/DieCuttingImage.png";
 
 const DieCuttingMachinesPage = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -130,7 +131,7 @@ const DieCuttingMachinesPage = () => {
       {/* Hero Section */}
       <section
         style={{
-          backgroundImage: `url("https://img.freepik.com/free-photo/lasercut-industry_1098-13416.jpg?t=st=1755589183~exp=1755592783~hmac=6b3daf302dcaf43b1b6c8d6e36ff36211fc9b2d67b13d0c4a56c5a9482f2f051&w=1060")`,
+          backgroundImage: `url(${DieCuttingImage})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "center",

@@ -1,14 +1,15 @@
 import React from "react";
+import { MapPin, Phone, Mail } from "lucide-react";
 import {
-  MapPin,
-  Phone,
-  Mail,
-  Facebook,
-  Instagram,
-  Linkedin,
-  Twitter,
-  Youtube,
-} from "lucide-react";
+  FaFacebookF,
+  FaTwitter,
+  FaLinkedinIn,
+  FaInstagram,
+  FaPinterestP,
+  FaYoutube,
+  FaWhatsapp,
+} from "react-icons/fa";
+import { MdCall, MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
@@ -76,6 +77,41 @@ const Footer = () => {
           </ul>
         </div>
 
+        <div className="fixed bottom-6 left-0 z-50">
+          <button
+            onClick={() =>
+              window.open(
+                "https://wa.me/918051448069?text=Hey!%20I%20am%20interested%20in%20your%20services.",
+                "_blank"
+              )
+            }
+            className="bg-green-600 hover:bg-green-700 cursor-pointer text-white p-4 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 animate-bounce"
+            aria-label="Need Help?"
+          >
+            <FaWhatsapp size={24} />
+          </button>
+        </div>
+        <div className="fixed bottom-6 right-0 z-50">
+          <button
+            onClick={() => (window.location.href = "tel:8051448069")}
+            className="bg-orange-500 cursor-pointer text-white p-4 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 animate-bounce"
+            aria-label="Need Help?"
+          >
+            <MdCall size={24} />
+          </button>
+        </div>
+        <div className="fixed bottom-28 right-0 z-50">
+          <button
+            onClick={() =>
+              (window.location.href = "mailto:kshailesh712@gmail.com")
+            }
+            className="bg-orange-500 cursor-pointer text-white p-4 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 animate-bounce"
+            aria-label="Email Us"
+          >
+            <MdEmail size={24} />
+          </button>
+        </div>
+
         {/* Social Media */}
         <div>
           <h3 className="text-lg font-semibold mb-4 text-yellow-400">
@@ -83,23 +119,23 @@ const Footer = () => {
           </h3>
           <div className="flex space-x-4">
             <a href="#" aria-label="Facebook" className="hover:text-yellow-300">
-              <Facebook />
+              <FaFacebookF />
             </a>
             <a
               href="#"
               aria-label="Instagram"
               className="hover:text-yellow-300"
             >
-              <Instagram />
+              <FaInstagram />
             </a>
             <a href="#" aria-label="LinkedIn" className="hover:text-yellow-300">
-              <Linkedin />
+              <FaLinkedinIn />
             </a>
             <a href="#" aria-label="Twitter" className="hover:text-yellow-300">
-              <Twitter />
+              <FaTwitter />
             </a>
             <a href="#" aria-label="YouTube" className="hover:text-yellow-300">
-              <Youtube />
+              <FaYoutube />
             </a>
           </div>
         </div>

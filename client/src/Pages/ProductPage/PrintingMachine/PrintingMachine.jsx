@@ -12,6 +12,13 @@ import {
   ChevronLeft,
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import Sm1028Image1 from "../../../assets/productImages/Sm1028pImage1.jpeg";
+import Sm1028Image2 from "../../../assets/productImages/Sm1028pImage2.jpeg";
+import Sm1028Image3 from "../../../assets/productImages/Sm1028pImage3.jpeg";
+import Sm1028p2000Image1 from "../../../assets/productImages/2000Sm102_8pImage1.jpeg";
+import Sm1028p2000Image2 from "../../../assets/productImages/2000Sm102_8pImage2.jpeg";
+import Sm1028p2000Image3 from "../../../assets/productImages/2000Sm102_8pImage3.jpeg";
+import Sm1028p2000Image4 from "../../../assets/productImages/2000Sm102_8pImage4.jpeg";
 
 const PrintingMachinesPage = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -63,42 +70,82 @@ const PrintingMachinesPage = () => {
       price: "₹20,00,000",
       originalPrice: "₹45,00,000",
     },
+    // {
+    //   id: 3,
+    //   name: "Heidelberg CD 102-6 LX Offset Printing Machine",
+    //   images: [
+    //     "https://5.imimg.com/data5/SELLER/Default/2024/2/393739791/FT/GN/JG/29805837/printing-machine-500x500.jpeg",
+    //     "https://5.imimg.com/data5/SELLER/Default/2024/2/393739797/LQ/OH/LC/29805837/printing-machine-500x500.jpeg",
+    //     "https://5.imimg.com/data5/SELLER/Default/2024/2/393739804/YZ/HD/EB/29805837/printing-machine-500x500.jpeg",
+    //     "https://5.imimg.com/data5/SELLER/Default/2024/2/393739807/PS/QW/XS/29805837/printing-machine-500x500.jpeg",
+    //   ],
+    //   description:
+    //     "State-of-the-art Heidelberg CD 102-6 LX featuring 6-color capability with advanced technology for high-volume commercial printing operations.",
+    //   features: [
+    //     "6-Color Printing",
+    //     "Large Format",
+    //     "Advanced Controls",
+    //     "High Volume Output",
+    //   ],
+    //   price: "Get Latest Price",
+    //   originalPrice: "₹1,45,00,000",
+    // },
+    // {
+    //   id: 4,
+    //   name: "Heidelberg GTO 52 VP Offset Printing Machine",
+    //   images: [
+    //     "https://5.imimg.com/data5/SELLER/Default/2024/2/393739249/VE/YO/QC/29805837/whatsapp-image-2024-02-27-at-9-12-11-am-1-500x500.jpeg",
+    //     "https://5.imimg.com/data5/SELLER/Default/2024/2/393739244/XK/BK/KG/29805837/whatsapp-image-2024-02-27-at-9-12-12-am-500x500.jpeg",
+    //     "https://5.imimg.com/data5/SELLER/Default/2024/2/393739252/PO/QZ/GO/29805837/whatsapp-image-2024-02-27-at-9-12-11-am-500x500.jpeg",
+    //     "https://5.imimg.com/data5/SELLER/Default/2024/2/393739244/XK/BK/KG/29805837/whatsapp-image-2024-02-27-at-9-12-12-am-500x500.jpeg",
+    //   ],
+    //   description:
+    //     "Compact and efficient Heidelberg GTO 52 VP perfect for small to medium print runs with exceptional versatility and print quality.",
+    //   features: [
+    //     "Compact Design",
+    //     "Variable Print",
+    //     "Easy Operation",
+    //     "Quick Setup",
+    //   ],
+    //   price: "Get Latest Price",
+    //   originalPrice: "₹22,00,000",
+    // },
     {
       id: 3,
-      name: "Heidelberg CD 102-6 LX Offset Printing Machine",
-      images: [
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/393739791/FT/GN/JG/29805837/printing-machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/393739797/LQ/OH/LC/29805837/printing-machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/393739804/YZ/HD/EB/29805837/printing-machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/393739807/PS/QW/XS/29805837/printing-machine-500x500.jpeg",
-      ],
+      name: "HEIDELBERG SM102-8P (8+0/4+4)",
+      images: [Sm1028Image1, Sm1028Image2, Sm1028Image3],
       description:
-        "State-of-the-art Heidelberg CD 102-6 LX featuring 6-color capability with advanced technology for high-volume commercial printing operations.",
+        "The 1999 Heidelberg SM102-8P (8+0 / 4+4) comes with CP2000, Autoplate, and a Preset Feeder for efficient operation. It features Alcolor Dampening, Pneumatic Compressor, Powder Spray, and steel plates in the feeder and delivery for added durability.",
       features: [
-        "6-Color Printing",
-        "Large Format",
-        "Advanced Controls",
-        "High Volume Output",
+        "CP 2000",
+        "Autoplate",
+        "Preset Feeder",
+        "Alcolor Dampening",
+        "Pneumatic Compressor",
+        "Powder Spray",
+        "Steel Plate in Feeder & Delivery",
       ],
       price: "Get Latest Price",
       originalPrice: "₹1,45,00,000",
     },
     {
       id: 4,
-      name: "Heidelberg GTO 52 VP Offset Printing Machine",
+      name: "2004 Heidelberg SM102 8P (8+0 / 4+4)",
       images: [
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/393739249/VE/YO/QC/29805837/whatsapp-image-2024-02-27-at-9-12-11-am-1-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/393739244/XK/BK/KG/29805837/whatsapp-image-2024-02-27-at-9-12-12-am-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/393739252/PO/QZ/GO/29805837/whatsapp-image-2024-02-27-at-9-12-11-am-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/393739244/XK/BK/KG/29805837/whatsapp-image-2024-02-27-at-9-12-12-am-500x500.jpeg",
+        Sm1028p2000Image1,
+        Sm1028p2000Image2,
+        Sm1028p2000Image3,
+        Sm1028p2000Image4,
       ],
       description:
-        "Compact and efficient Heidelberg GTO 52 VP perfect for small to medium print runs with exceptional versatility and print quality.",
+        "The 2004 Heidelberg SM102 8P (8+0 / 4+4) features the CP2000 control system, Preset Plus Feeder, and Autoplate for quick setup. It includes Alcolor damping, Technotrans refrigeration, and a Preset Delivery system for consistent quality and smooth operation.",
       features: [
-        "Compact Design",
-        "Variable Print",
-        "Easy Operation",
-        "Quick Setup",
+        "CP2000",
+        "Preset Plus Feeder",
+        "Autoplate",
+        "Alcolor Damping",
+        "Technotrans Refrigeration",
+        "Preset Delivery",
       ],
       price: "Get Latest Price",
       originalPrice: "₹22,00,000",

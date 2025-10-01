@@ -12,60 +12,23 @@ import {
   ChevronLeft,
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import Sm1028Image1 from "../../../assets/productImages/Sm1028pImage1.jpeg";
-import Sm1028Image2 from "../../../assets/productImages/Sm1028pImage2.jpeg";
-import Sm1028Image3 from "../../../assets/productImages/Sm1028pImage3.jpeg";
-import Sm1028p2000Image1 from "../../../assets/productImages/2000Sm102_8pImage1.jpeg";
-import Sm1028p2000Image2 from "../../../assets/productImages/2000Sm102_8pImage2.jpeg";
-import Sm1028p2000Image3 from "../../../assets/productImages/2000Sm102_8pImage3.jpeg";
-import Sm1028p2000Image4 from "../../../assets/productImages/2000Sm102_8pImage4.jpeg";
-import HeidelbergSM102SLXFive from "../../../assets/images/1993HeidelbergSM102-SLXFive.jpeg";
-import HeidelbergSM102SLXOne from "../../../assets/images/1993HeidelbergSM102-SLXOne.jpeg";
-import HeidelbergSM102SLXTwo from "../../../assets/images/1993HeidelbergSM102-SLXTwo.jpeg";
-import HeidelbergSM102SLXThree from "../../../assets/images/1993HeidelbergSM102-SLXThree.jpeg";
-import HeidelbergSM102SLXFour from "../../../assets/images/1993HeidelbergSM102-SLXFour.jpeg";
-import RYOBI526GXCImage from "../../../assets/images/RYOBI526GXCImage.jpeg";
-import AVAILABLEINREADYSTOCKOne from "../../../assets/AVAILABLE_IN_READY_STOCK/AVAILABLEINREADYSTOCKOne.jpeg";
-import AVAILABLEINREADYSTOCKTwo from "../../../assets/AVAILABLE_IN_READY_STOCK/AVAILABLEINREADYSTOCKTwo.jpeg";
-import AVAILABLEINREADYSTOCKThree from "../../../assets/AVAILABLE_IN_READY_STOCK/AVAILABLEINREADYSTOCKThree.jpeg";
-import AVAILABLEINREADYSTOCKFour from "../../../assets/AVAILABLE_IN_READY_STOCK/AVAILABLEINREADYSTOCKFour.jpeg";
-import AVAILABLEINREADYSTOCKFive from "../../../assets/AVAILABLE_IN_READY_STOCK/AVAILABLEINREADYSTOCKFive.jpeg";
-import STRAIGHTHeidelbergSM746One from "../../../assets/STRAIGHTHeidelbergSM74_6/STRAIGHTHeidelbergSM746One.jpeg";
-import STRAIGHTHeidelbergSM746Two from "../../../assets/STRAIGHTHeidelbergSM74_6/STRAIGHTHeidelbergSM746Two.jpeg";
-import STRAIGHTHeidelbergSM746Three from "../../../assets/STRAIGHTHeidelbergSM74_6/STRAIGHTHeidelbergSM746Three.jpeg";
-import STRAIGHTHeidelbergSM746Four from "../../../assets/STRAIGHTHeidelbergSM74_6/STRAIGHTHeidelbergSM746Four.jpeg";
-import HEIDELBERG1024COLOR1992One from "../../../assets/1992HEIDELBERG1024COLOR/1992HEIDELBERG1024COLOROne.jpeg";
-import HEIDELBERG1024COLOR1992Two from "../../../assets/1992HEIDELBERG1024COLOR/1992HEIDELBERG1024COLORTwo.jpeg";
-import HEIDELBERG1024COLOR1992Three from "../../../assets/1992HEIDELBERG1024COLOR/1992HEIDELBERG1024COLORThree.jpeg";
-import HEIDELBERG1024COLOR1992Four from "../../../assets/1992HEIDELBERG1024COLOR/1992HEIDELBERG1024COLORFour.jpeg";
-import HEIDELBERG1024COLOR1992Five from "../../../assets/1992HEIDELBERG1024COLOR/1992HEIDELBERG1024COLORFive.jpeg";
-import KOMORI226ImageOne from "../../../assets/Komori226/KOMORI226ImageOne.jpeg";
-import KOMORI226ImageTwo from "../../../assets/Komori226/KOMORI226ImageTwo.jpeg";
-import KOMORI226ImageThree from "../../../assets/Komori226/KOMORI226ImageThree.jpeg";
-import KOMORI226ImageFour from "../../../assets/Komori226/KOMORI226ImageFour.jpeg";
-import KOMORI226ImageFive from "../../../assets/Komori226/KOMORI226ImageFive.jpeg";
-import Fivecolourprintingmachine1 from "../../../assets/Five_colour_printing_machine/Fivecolourprintingmachine1.jpeg";
-import Fivecolourprintingmachine2 from "../../../assets/Five_colour_printing_machine/Fivecolourprintingmachine2.jpeg";
-import Fivecolourprintingmachine3 from "../../../assets/Five_colour_printing_machine/Fivecolourprintingmachine3.jpeg";
-import Fivecolourprintingmachine4 from "../../../assets/Five_colour_printing_machine/Fivecolourprintingmachine4.jpeg";
-import Fivecolourprintingmachine5 from "../../../assets/Five_colour_printing_machine/Fivecolourprintingmachine5.jpeg";
-import HeidelbergSord512One from "../../../assets/HeidelbergSord512/HeidelbergSord512One.jpeg";
-import HeidelbergSord512TWo from "../../../assets/HeidelbergSord512/HeidelbergSord512Two.jpeg";
-import HeidelbergSord512Three from "../../../assets/HeidelbergSord512/HeidelbergSord512Three.jpeg";
-import HeidelbergSord512Four from "../../../assets/HeidelbergSord512/HeidelbergSord512Four.jpeg";
-import HeidelbergSord512Five from "../../../assets/HeidelbergSord512/HeidelbergSord512Five.jpeg";
-import WebOffset4HiImageOne from "../../../assets/WebOffset4Hi/WebOffset4HiImageOne.jpeg";
-import WebOffset4HiImageTwo from "../../../assets/WebOffset4Hi/WebOffset4HiImageTwo.jpeg";
-import WebOffset4HiImageThree from "../../../assets/WebOffset4Hi/WebOffset4HiImageThree.jpeg";
-import WebOffset4HiImageFour from "../../../assets/WebOffset4Hi/WebOffset4HiImageFour.jpeg";
-import WebOffset4HiImageFive from "../../../assets/WebOffset4Hi/WebOffset4HiImageFive.jpeg";
-import { useNavigate } from "react-router-dom";
 
-const PrintingMachinesPage = () => {
+import SixColorMachineImageOne from "../../../../assets/SixColorMachineImage/SixColorMachineImageOne.jpeg";
+import SixColorMachineImageTwo from "../../../../assets/SixColorMachineImage/SixColorMachineImageTwo.jpeg";
+import SixColorMachineImageThree from "../../../../assets/SixColorMachineImage/SixColorMachineImageThree.jpeg";
+import SixColorMachineImageFour from "../../../../assets/SixColorMachineImage/SixColorMachineImageFour.jpeg";
+import SixColorMachineImageFive from "../../../../assets/SixColorMachineImage/SixColorMachineImageFive.jpeg";
+import AVAILABLEINREADYSTOCKOne from "../../../../assets/AVAILABLE_IN_READY_STOCK/AVAILABLEINREADYSTOCKOne.jpeg";
+import AVAILABLEINREADYSTOCKTwo from "../../../../assets/AVAILABLE_IN_READY_STOCK/AVAILABLEINREADYSTOCKTwo.jpeg";
+import AVAILABLEINREADYSTOCKThree from "../../../../assets/AVAILABLE_IN_READY_STOCK/AVAILABLEINREADYSTOCKThree.jpeg";
+import AVAILABLEINREADYSTOCKFour from "../../../../assets/AVAILABLE_IN_READY_STOCK/AVAILABLEINREADYSTOCKFour.jpeg";
+import AVAILABLEINREADYSTOCKFive from "../../../../assets/AVAILABLE_IN_READY_STOCK/AVAILABLEINREADYSTOCKFive.jpeg";
+import RYOBI526GXCImage from "../../../../assets/SixColorMachineImage/RYOBI526GXC.jpeg";
+
+const SixColorPrintingMachine = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [activeProduct, setActiveProduct] = useState(null);
   const [currentImageIndex, setCurrentImageIndex] = useState({});
-  const navigate = useNavigate();
 
   useEffect(() => {
     setIsVisible(true);
@@ -74,152 +37,55 @@ const PrintingMachinesPage = () => {
   const products = [
     {
       id: 1,
-      name: "8 Color Printing Machine",
-      images: [Sm1028Image1, Sm1028Image2, Sm1028Image3],
-      description:
-        "The Heidelberg SM102-8P is a high-performance 8-color offset printing machine, designed for precision, speed, and versatility in commercial printing. This model supports perfecting (8+0 or 4+4) configurations, making it ideal for high-volume, double-sided printing with consistent quality.",
-      features: [
-        "Perfecting Capability",
-        "CP2000 Control",
-        "High-Speed Output",
-        "Precision Registration",
+      name: "1993 Heidelberg SM 102-S+LX",
+      images: [
+        SixColorMachineImageOne,
+        SixColorMachineImageTwo,
+        SixColorMachineImageThree,
+        SixColorMachineImageFour,
+        SixColorMachineImageFive,
       ],
-      price: "₹15,00,000",
+      description:
+        "This Heidelberg Speedmaster 6-Color Press with Coater is a straight machine (6+0) manufactured in December 1992, sourced from New York, USA 🇺🇸. With a 28” x 40” format, it’s equipped for high-quality commercial printing, featuring CPC 1-03, CP Tronic, Alcolor damping, and an online roller coater with IR dryer. Despite its age, the machine remains in excellent condition, ideal for high-coverage color work with inline coating capability.",
+      features: ["Roller Coater", "IR Dryer", "CP Tronic", "Alcolor Dampening"],
+      price: "Get Latest Price",
       originalPrice: "₹55,00,000",
-      link: "/eight-color-printing-machine",
     },
     {
       id: 2,
-      name: "6 Color Printing Machine",
-      images: [
-        HeidelbergSM102SLXOne,
-        HeidelbergSM102SLXTwo,
-        HeidelbergSM102SLXThree,
-        HeidelbergSM102SLXFour,
-        HeidelbergSM102SLXFive,
-      ],
+      name: "RYOBI 526 GX + C",
+      images: [RYOBI526GXCImage],
       description:
-        "A reliable 6-color printing setup featuring the Heidelberg SM 102-S+LX (1993) with coater and extended delivery, ideal for high-quality commercial print jobs. Combined with the compact and efficient RYOBI 526 GX+C, this setup offers versatility, sharp color output, and consistent performance for a wide range of printing needs.",
+        "The Ryobi 526 GX+C is a 6-color UV offset press with coater, built in 2008, featuring a 14” x 20” format. Imported from the USA 🇺🇸, it was used for specialized UV applications such as plastic cards and credit cards. Equipped with semi-automatic plate changers, interdeck UV curing, and an Anilox coating unit, this press is highly suitable for high-gloss, quick-cure printing. With only approx. 30 million impressions, it’s in excellent operational condition and includes advanced automation and color management tools.",
       features: [
-        "6-Color Capability",
-        "Extended Delivery",
-        "Compact Design (for RYOBI)",
-        "Consistent Color Output",
+        "UV Curing System",
+        "Anilox Coater",
+        "PCS-G Console",
+        "Semi-Auto Plate Change",
       ],
-      price: "₹20,00,000",
-      originalPrice: "₹45,00,000",
-      link: "/six-color-printing-machine",
+      price: "Get Latest Price",
+      originalPrice: "₹55,00,000",
     },
-
     {
       id: 3,
-      name: "5 Color Printing Machine",
+      name: "Heidelberg SM 74-6+L CPC 1-04",
       images: [
-        Fivecolourprintingmachine1,
-        Fivecolourprintingmachine2,
-        Fivecolourprintingmachine3,
-        Fivecolourprintingmachine4,
-        Fivecolourprintingmachine5,
+        AVAILABLEINREADYSTOCKOne,
+        AVAILABLEINREADYSTOCKTwo,
+        AVAILABLEINREADYSTOCKThree,
+        AVAILABLEINREADYSTOCKFour,
+        AVAILABLEINREADYSTOCKFive,
       ],
       description:
-        "A versatile lineup of 5-color offset presses, including the Heidelberg MOV, Adast Dominant 755CP, and Komori NL526 ES. Designed for sharp, multi-color output and reliable performance, these machines are ideal for high-quality commercial printing, packaging, and specialty jobs with precise registration and consistent results.",
+        "Now available in ready stock, this Heidelberg SM 74-6+L is a 6-color offset press with coater and 2+4 perfecting capability. Manufactured in December 1997 and imported from South America, it features Autoplate, CPC 1-04, Alcolor dampening, and Technotrans refrigeration. With a 520 x 740 mm sheet size and key automation features like preset feeder, blanket wash-up, and non-stop delivery, this press offers excellent versatility and productivity for medium-format commercial printing.",
       features: [
-        "5-Color Printing",
-        "High Print Accuracy",
-        "Stable Registration",
-        "Reliable Performance",
+        "2+4 Perfecting",
+        "Autoplate System",
+        "Preset Feeder",
+        "Technotrans Cooling",
       ],
       price: "Get Latest Price",
-      originalPrice: "₹1,45,00,000",
-      link: "/five-color-printing-machine",
-    },
-    {
-      id: 4,
-      name: "4 Color Printing Machine",
-      images: [
-        HEIDELBERG1024COLOR1992One,
-        HEIDELBERG1024COLOR1992Two,
-        HEIDELBERG1024COLOR1992Three,
-        HEIDELBERG1024COLOR1992Four,
-        HEIDELBERG1024COLOR1992Five,
-      ],
-      description:
-        "A robust collection of 4-color offset presses, including the 1992 Heidelberg 102, Komori Lithrone 440, and ADAST 747 Straight. Engineered for precision, reliability, and vibrant color output, these machines are ideal for commercial printing, packaging, and high-volume jobs demanding consistent quality.",
-      features: [
-        "4-Color Printing",
-        "High Print Precision",
-        "Consistent Registration",
-        "Commercial Versatility",
-      ],
-      price: "Get Latest Price",
-      originalPrice: "₹22,00,000",
-      link: "/four-color-printing-machine",
-    },
-    {
-      id: 5,
-      name: "2 Color Printing Machine",
-      images: [
-        KOMORI226ImageOne,
-        KOMORI226ImageTwo,
-        KOMORI226ImageThree,
-        KOMORI226ImageFour,
-        KOMORI226ImageFive,
-      ],
-      description:
-        "A reliable selection of 2-color offset presses, including KOMORI 226 with Alcolor dampening, Heidelberg 28x40 Double Color (Water Dampening), Polly 266 with Elcolor & High Pile Delivery (2000), and Polly 725 PVBD (1996). Perfect for spot color jobs, forms, and two-color commercial printing with consistent performance and sharp output.",
-      features: [
-        "2-Color Printing",
-        "Dampening Systems",
-        "High Pile Delivery",
-        "Precision Output",
-      ],
-      price: "Get Latest Price",
-      originalPrice: "₹85,00,000",
-      link: "/two-color-printing-machine",
-    },
-    {
-      id: 6,
-      name: "Single Color Printing Machine",
-      images: [
-        HeidelbergSord512One,
-        HeidelbergSord512TWo,
-        HeidelbergSord512Three,
-        HeidelbergSord512Four,
-        HeidelbergSord512Five,
-      ],
-      description:
-        "A dependable range of single-color offset presses including Heidelberg SORM, Heidelberg SORD, RYOBI 3200 CD, and HAMADA B-52. Ideal for letterheads, invoices, forms, and monochrome print jobs, these machines offer precise output, easy operation, and long-term reliability for everyday printing needs.",
-      features: [
-        "Single-Color Printing",
-        "Sharp Registration",
-        "Compact Design",
-        "Easy Operation",
-      ],
-      price: "Get Latest Price",
-      originalPrice: "₹15,00,000",
-      link: "/single-color-printing-machine",
-    },
-    {
-      id: 7,
-      name: "Web Offset Printing Machine",
-      images: [
-        WebOffset4HiImageOne,
-        WebOffset4HiImageTwo,
-        WebOffset4HiImageThree,
-        WebOffset4HiImageFour,
-        WebOffset4HiImageFive,
-      ],
-      description:
-        "High-speed web offset solutions including the Web 578 and 4 Hi Web Offset Machine, designed for large-volume printing such as newspapers, books, and commercial inserts. These machines ensure fast output, sharp print quality, and reliable performance for continuous roll-fed printing operations.",
-      features: [
-        "High-Speed Output",
-        "Roll-Fed Printing",
-        "Consistent Quality",
-        "Large Volume Capacity",
-      ],
-      price: "Get Latest Price",
-      originalPrice: "₹15,00,000",
-      link: "/web-offset-printing-machine",
+      originalPrice: "₹55,00,000",
     },
   ];
 
@@ -337,11 +203,11 @@ const PrintingMachinesPage = () => {
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800">
               Our Range Of&nbsp;
-              <span className="text-blue-600">Printing Machines</span>
+              <span className="text-blue-600">Six Color Printing Machines</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Discover our comprehensive collection of world-class printing
-              machines from industry leaders Heidelberg and Komori
+              Discover our comprehensive collection of world-class six color
+              printing machines from industry leaders Heidelberg and Ryobi
             </p>
           </div>
 
@@ -468,13 +334,10 @@ const PrintingMachinesPage = () => {
                       )} */}
                     </div>
                     <button
-                      onClick={() => {
-                        navigate(product.link);
-                        window.scrollTo({ top: 0, behavior: "smooth" });
-                      }}
+                      onClick={() => (window.location.href = "tel:8051448069")}
                       className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-700 hover:to-orange-800 cursor-pointer text-white px-6 py-2 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center gap-2 group"
                     >
-                      Learn More
+                      Contact Us
                       <ChevronRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
                     </button>
                   </div>
@@ -588,4 +451,4 @@ const PrintingMachinesPage = () => {
   );
 };
 
-export default PrintingMachinesPage;
+export default SixColorPrintingMachine;

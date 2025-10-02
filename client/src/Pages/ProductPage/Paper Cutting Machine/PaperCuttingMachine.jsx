@@ -13,6 +13,26 @@ import {
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import DieCuttingImage from "../../../assets/DieCuttingImage.png";
+import POLAR92EMOne from "../../../assets/PaperCuttingImages/Polar92Em/POLAR92EMOne.jpeg";
+import POLAR92EMTwo from "../../../assets/PaperCuttingImages/Polar92Em/POLAR92EMTwo.jpeg";
+import POLAR92EMThree from "../../../assets/PaperCuttingImages/Polar92Em/POLAR92EMThree.jpeg";
+import POLAR92EMFour from "../../../assets/PaperCuttingImages/Polar92Em/POLAR92EMFour.jpeg";
+import POLAR92EMFive from "../../../assets/PaperCuttingImages/Polar92Em/POLAR92EMFive.jpeg";
+import Polar115EMCOne from "../../../assets/PaperCuttingImages/Polar115EMC/Polar115EMCOne.jpeg";
+import Polar115EMCTwo from "../../../assets/PaperCuttingImages/Polar115EMC/Polar115EMCTwo.jpeg";
+import Polar115EMCThree from "../../../assets/PaperCuttingImages/Polar115EMC/Polar115EMCThree.jpeg";
+import Polar115EMCFour from "../../../assets/PaperCuttingImages/Polar115EMC/Polar115EMCFour.jpeg";
+import Polar115EMCFive from "../../../assets/PaperCuttingImages/Polar115EMC/Polar115EMCFive.jpeg";
+import WOHLENBERGA43DOOne from "../../../assets/PaperCuttingImages/WOHLENBERG_A43DO/WOHLENBERGA43DOOne.jpeg";
+import WOHLENBERGA43DOTwo from "../../../assets/PaperCuttingImages/WOHLENBERG_A43DO/WOHLENBERG_A43DOTwo.jpeg";
+import WOHLENBERGA43DOThree from "../../../assets/PaperCuttingImages/WOHLENBERG_A43DO/WOHLENBERG_A43DOThree.jpeg";
+import WOHLENBERGA43DOFour from "../../../assets/PaperCuttingImages/WOHLENBERG_A43DO/WOHLENBERG_A43DOFour.jpeg";
+import WOHLENBERGA43DOFive from "../../../assets/PaperCuttingImages/WOHLENBERG_A43DO/WOHLENBERG_A43DOFive.jpeg";
+import ThreeKnifeTrimmerOne from "../../../assets/PaperCuttingImages/THREE_KNIFE_TRIMMER/ThreeKnifeTrimmerOne.jpeg";
+import ThreeKnifeTrimmerTwo from "../../../assets/PaperCuttingImages/THREE_KNIFE_TRIMMER/ThreeKnifeTrimmerTwo.jpeg";
+import ThreeKnifeTrimmerThree from "../../../assets/PaperCuttingImages/THREE_KNIFE_TRIMMER/ThreeKnifeTrimmerThree.jpeg";
+import ThreeKnifeTrimmerFour from "../../../assets/PaperCuttingImages/THREE_KNIFE_TRIMMER/ThreeKnifeTrimmerFour.jpeg";
+import ThreeKnifeTrimmerFive from "../../../assets/PaperCuttingImages/THREE_KNIFE_TRIMMER/ThreeKnifeTrimmerFive.jpeg";
 
 const PaperCuttingMachinesPage = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -26,144 +46,148 @@ const PaperCuttingMachinesPage = () => {
   const products = [
     {
       id: 1,
-      name: "Polar 137 EMC Paper Cutting Machine",
+      name: "POLAR 92 EM",
       images: [
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/389284558/YK/MJ/SO/29805837/rapid-prototype-machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/389284550/RR/IS/SF/29805837/rapid-prototype-machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/389284562/BB/HO/BT/29805837/rapid-prototype-machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/389284553/BN/UL/ST/29805837/rapid-prototype-machine-500x500.jpeg",
+        POLAR92EMOne,
+        POLAR92EMTwo,
+        POLAR92EMThree,
+        POLAR92EMFour,
+        POLAR92EMFive,
       ],
       description:
-        "High-precision Komori 2-color offset printing machine designed for exceptional print quality and reliability. Perfect for commercial printing operations requiring consistent results.",
+        "Available for sale, this Polar 92 EM is a high-precision 36” programmable paper cutting machine, manufactured in 1988 and imported from Australia. It comes equipped with an air table, original program controls, side photocell safety, and includes books, tools, and knife change accessories. A reliable and well-maintained cutter, perfect for commercial print finishing operations.",
       features: [
-        "2-Color Printing",
-        "High Speed Operation",
-        "Precision Registration",
-        "Auto Plate Loading",
+        "36” Cutting Size",
+        "Air Table",
+        "Side Photocell",
+        "Program Control",
       ],
-      price: "₹15,00,000",
+      price: "Get Latest Price",
       originalPrice: "₹55,00,000",
     },
     {
       id: 2,
-      name: "Paper Core Cutting Machine",
+      name: "Polar 115 EMC+ Monitor",
       images: [
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/389285212/FE/ND/JA/29805837/mini-offset-printing-machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/389285213/GW/WS/UM/29805837/mini-offset-printing-machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/389285253/RQ/MS/FS/29805837/mini-offset-printing-machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/389285228/VK/UB/VS/29805837/mini-offset-printing-machine-500x500.jpeg",
+        Polar115EMCOne,
+        Polar115EMCTwo,
+        Polar115EMCThree,
+        Polar115EMCFour,
+        Polar115EMCFive,
       ],
       description:
-        "Professional-grade Heidelberg Sorsz 2-color offset printing machine offering superior print quality with advanced automation features for enhanced productivity.",
+        "This Polar 115 EMC+ Monitor is a 45” programmable paper cutter, manufactured in 1990 and imported from Germany. It features a chrome air table, original monitor program, side photocell safety, and comes complete with left & right wooden side tables, original Polar jogger, books, tools, and knife changing kit. A solid and reliable cutting solution for medium to large-format commercial print finishing.",
       features: [
-        "2-Color Configuration",
-        "Advanced Automation",
-        "Quick Job Changes",
-        "Superior Print Quality",
+        "45” Cutting Size",
+        "Chrome Air Table",
+        "Monitor Control",
+        "Polar Jogger",
       ],
-      price: "₹20,00,000",
+      price: "Get Latest Price",
       originalPrice: "₹45,00,000",
     },
     {
       id: 3,
-      name: "Polar 55 EM Paper Cutting Machine",
+      name: "WOHLENBERG A43DO",
       images: [
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/389317861/EK/SA/CV/29805837/cutting-machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/389317874/QL/WZ/QL/29805837/cutting-machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/389317858/MH/TS/AZ/29805837/cutting-machine-500x500.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/389317859/CI/HN/WH/29805837/cutting-machine-500x500.jpeg",
+        WOHLENBERGA43DOOne,
+        WOHLENBERGA43DOTwo,
+        WOHLENBERGA43DOThree,
+        WOHLENBERGA43DOFour,
+        WOHLENBERGA43DOFive,
       ],
       description:
-        "State-of-the-art Heidelberg CD 102-6 LX featuring 6-color capability with advanced technology for high-volume commercial printing operations.",
+        "The Wohlenberg A43DO is a precision three-knife trimmer, built in 1988 and imported from Europe. Designed for high-quality book and brochure finishing, it comes with a drive motor, blower, belt delivery, and includes valuable extras like an additional DAAB, extra bed plates, and is in excellent working condition. A durable and reliable post-press solution for bindery and finishing operations.",
       features: [
-        "6-Color Printing",
-        "Large Format",
-        "Advanced Controls",
-        "High Volume Output",
+        "Three-Knife Trimmer",
+        "Drive Motor",
+        "Extra Accessories",
+        "Belt Delivery",
       ],
       price: "Get Latest Price",
       originalPrice: "₹1,45,00,000",
     },
     {
       id: 4,
-      name: "32 Inch Manual Paper Cutting Machine",
+      name: "Fully High Speed THREE KNIFE TRIMMER",
       images: [
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/394180606/SN/RT/FA/29805837/32-inch-manually-paper-cutting-machine-500x500.jpg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/394180606/SN/RT/FA/29805837/32-inch-manually-paper-cutting-machine-500x500.jpg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/394180606/SN/RT/FA/29805837/32-inch-manually-paper-cutting-machine-500x500.jpg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/394180606/SN/RT/FA/29805837/32-inch-manually-paper-cutting-machine-500x500.jpg",
+        ThreeKnifeTrimmerOne,
+        ThreeKnifeTrimmerTwo,
+        ThreeKnifeTrimmerThree,
+        ThreeKnifeTrimmerFour,
+        ThreeKnifeTrimmerFive,
       ],
       description:
-        "Compact and efficient Heidelberg GTO 52 VP perfect for small to medium print runs with exceptional versatility and print quality.",
+        "This is a fully high-speed three-knife trimmer, imported from China, built for fast and accurate book and booklet trimming. Designed for industrial-level performance, it ensures clean, precise cuts at high production speeds. Ideal for commercial bindery operations demanding efficiency, durability, and consistency in output.",
       features: [
-        "Compact Design",
-        "Variable Print",
-        "Easy Operation",
-        "Quick Setup",
+        "High-Speed Trimming",
+        "Three-Knife System",
+        "Heavy-Duty Build",
+        "Imported from China",
       ],
       price: "Get Latest Price",
       originalPrice: "₹22,00,000",
     },
-    {
-      id: 5,
-      name: "High Speed Rotary Sheet Cutter Machine",
-      images: [
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/394185746/OK/UQ/JR/29805837/rotary-sheet-cutter-machine-500x500.jpg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/394185684/ES/BA/VW/29805837/rotary-sheet-cutter-machine-500x500.jpg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/394185690/KK/OW/GR/29805837/rotary-sheet-cutter-machine-500x500.jpg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/394185684/ES/BA/VW/29805837/rotary-sheet-cutter-machine-500x500.jpg",
-      ],
-      description:
-        "Premium Heidelberg SM 74 color printing machine delivering outstanding color reproduction and efficiency for demanding commercial applications.",
-      features: [
-        "Multi-Color Printing",
-        "Premium Quality",
-        "Fast Production",
-        "Color Management",
-      ],
-      price: "Get Latest Price",
-      originalPrice: "₹85,00,000",
-    },
-    {
-      id: 6,
-      name: "Automatic Paper Cutting Machine",
-      images: [
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/394032590/GS/DX/PN/29805837/automatic-paper-cutting-machine-500x500.jpg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/394032588/RC/VK/VX/29805837/automatic-paper-cutting-machine-500x500.jpg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/394032590/GS/DX/PN/29805837/automatic-paper-cutting-machine-500x500.jpg",
-        "https://5.imimg.com/data5/SELLER/Default/2024/2/394032588/RC/VK/VX/29805837/automatic-paper-cutting-machine-500x500.jpg",
-      ],
-      description:
-        "Reliable Heidelberg single color printing machine ideal for monochrome printing tasks with consistent quality and operational efficiency.",
-      features: [
-        "Single Color",
-        "Reliable Performance",
-        "Cost Effective",
-        "Easy Maintenance",
-      ],
-      price: "Get Latest Price",
-      originalPrice: "₹15,00,000",
-    },
-    {
-      id: 7,
-      name: "Lamination Roll To Sheet Cutter",
-      images: [
-        "https://5.imimg.com/data5/ANDROID/Default/2024/7/436685211/QY/QQ/MK/29805837/product-jpeg-500x500.jpg",
-        "https://5.imimg.com/data5/ANDROID/Default/2024/7/436685078/ZV/AT/BJ/29805837/product-jpeg-500x500.jpg",
-        "https://5.imimg.com/data5/ANDROID/Default/2024/7/436685331/QM/QZ/CZ/29805837/product-jpeg-500x500.jpg",
-        "https://5.imimg.com/data5/ANDROID/Default/2024/7/436685135/DC/LZ/SI/29805837/product-jpeg-500x500.jpg",
-      ],
-      description:
-        "Reliable Heidelberg single color printing machine ideal for monochrome printing tasks with consistent quality and operational efficiency.",
-      features: [
-        "Single Color",
-        "Reliable Performance",
-        "Cost Effective",
-        "Easy Maintenance",
-      ],
-      price: "Get Latest Price",
-      originalPrice: "₹15,00,000",
-    },
+    // {
+    //   id: 5,
+    //   name: "High Speed Rotary Sheet Cutter Machine",
+    //   images: [
+    //     "https://5.imimg.com/data5/SELLER/Default/2024/2/394185746/OK/UQ/JR/29805837/rotary-sheet-cutter-machine-500x500.jpg",
+    //     "https://5.imimg.com/data5/SELLER/Default/2024/2/394185684/ES/BA/VW/29805837/rotary-sheet-cutter-machine-500x500.jpg",
+    //     "https://5.imimg.com/data5/SELLER/Default/2024/2/394185690/KK/OW/GR/29805837/rotary-sheet-cutter-machine-500x500.jpg",
+    //     "https://5.imimg.com/data5/SELLER/Default/2024/2/394185684/ES/BA/VW/29805837/rotary-sheet-cutter-machine-500x500.jpg",
+    //   ],
+    //   description:
+    //     "Premium Heidelberg SM 74 color printing machine delivering outstanding color reproduction and efficiency for demanding commercial applications.",
+    //   features: [
+    //     "Multi-Color Printing",
+    //     "Premium Quality",
+    //     "Fast Production",
+    //     "Color Management",
+    //   ],
+    //   price: "Get Latest Price",
+    //   originalPrice: "₹85,00,000",
+    // },
+    // {
+    //   id: 6,
+    //   name: "Automatic Paper Cutting Machine",
+    //   images: [
+    //     "https://5.imimg.com/data5/SELLER/Default/2024/2/394032590/GS/DX/PN/29805837/automatic-paper-cutting-machine-500x500.jpg",
+    //     "https://5.imimg.com/data5/SELLER/Default/2024/2/394032588/RC/VK/VX/29805837/automatic-paper-cutting-machine-500x500.jpg",
+    //     "https://5.imimg.com/data5/SELLER/Default/2024/2/394032590/GS/DX/PN/29805837/automatic-paper-cutting-machine-500x500.jpg",
+    //     "https://5.imimg.com/data5/SELLER/Default/2024/2/394032588/RC/VK/VX/29805837/automatic-paper-cutting-machine-500x500.jpg",
+    //   ],
+    //   description:
+    //     "Reliable Heidelberg single color printing machine ideal for monochrome printing tasks with consistent quality and operational efficiency.",
+    //   features: [
+    //     "Single Color",
+    //     "Reliable Performance",
+    //     "Cost Effective",
+    //     "Easy Maintenance",
+    //   ],
+    //   price: "Get Latest Price",
+    //   originalPrice: "₹15,00,000",
+    // },
+    // {
+    //   id: 7,
+    //   name: "Lamination Roll To Sheet Cutter",
+    //   images: [
+    //     "https://5.imimg.com/data5/ANDROID/Default/2024/7/436685211/QY/QQ/MK/29805837/product-jpeg-500x500.jpg",
+    //     "https://5.imimg.com/data5/ANDROID/Default/2024/7/436685078/ZV/AT/BJ/29805837/product-jpeg-500x500.jpg",
+    //     "https://5.imimg.com/data5/ANDROID/Default/2024/7/436685331/QM/QZ/CZ/29805837/product-jpeg-500x500.jpg",
+    //     "https://5.imimg.com/data5/ANDROID/Default/2024/7/436685135/DC/LZ/SI/29805837/product-jpeg-500x500.jpg",
+    //   ],
+    //   description:
+    //     "Reliable Heidelberg single color printing machine ideal for monochrome printing tasks with consistent quality and operational efficiency.",
+    //   features: [
+    //     "Single Color",
+    //     "Reliable Performance",
+    //     "Cost Effective",
+    //     "Easy Maintenance",
+    //   ],
+    //   price: "Get Latest Price",
+    //   originalPrice: "₹15,00,000",
+    // },
   ];
 
   const nextImage = (productId, imagesLength) => {
@@ -286,11 +310,9 @@ const PaperCuttingMachinesPage = () => {
               <span className="text-blue-600">Paper Cutting Machines</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Providing you the best range of Polar 137 EMC Paper Cutting
-              Machine, Paper Core Cutting Machine, Polar 55 EM Paper Cutting
-              Machine, 32 Inch Manual Paper Cutting Machine, High Speed Rotary
-              Sheet Cutter Machine and Automatic Paper Cutting Machine with
-              effective & timely delivery.
+              Providing you the best range of POLAR 92 EM Paper Cutting Machine,
+              Polar 115 EMC+ Monitor, WOHLENBERG A43DO and Fully High Speed
+              Three Knife Trimmer with effective & timely delivery.
             </p>
           </div>
 

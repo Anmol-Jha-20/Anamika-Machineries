@@ -13,6 +13,13 @@ import {
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import DieCuttingImage from "../../../assets/DieCuttingImage.png";
+import BOBSTSP102CERImage1 from "../../../assets/DieCuttingImage/BOBSTSP102CERImage1.jpeg";
+import BOBSTSP102CERImage2 from "../../../assets/DieCuttingImage/BOBSTSP102CERImage2.jpeg";
+import BOBSTSP102CERImage3 from "../../../assets/DieCuttingImage/BOBSTSP102CERImage3.jpeg";
+import HeidelbergSBGCylinderImage1 from "../../../assets/DieCuttingImage/HeidelbergSBGCylinderImage1.jpeg";
+import HeidelbergSBGCylinderImage2 from "../../../assets/DieCuttingImage/HeidelbergSBGCylinderImage2.jpeg";
+import HeidelbergSBGCylinderImage3 from "../../../assets/DieCuttingImage/HeidelbergSBGCylinderImage3.jpeg";
+import HeidelbergSBGCylinderImage4 from "../../../assets/DieCuttingImage/HeidelbergSBGCylinderImage4.jpeg";
 
 const DieCuttingMachinesPage = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -26,6 +33,41 @@ const DieCuttingMachinesPage = () => {
   const products = [
     {
       id: 1,
+      name: "BOBST SP 102 CER",
+      images: [BOBSTSP102CERImage1, BOBSTSP102CERImage2, BOBSTSP102CERImage3],
+      description:
+        "The BOBST SP 102 CER is a high-performance die-cutting machine designed for precision and speed. Manufactured in 1987 and imported from the USA, it features Autoplaten technology, a double and fine striping (blanking) system, and delivers a cutting force of up to 250 tonnes at a production speed of 7,000 sheets per hour. Ideal for medium to large-scale packaging operations.",
+      features: [
+        "Autoplaten Technology",
+        "Double Striping",
+        "Fine Blanking System",
+        "High Cutting Force",
+      ],
+      price: "Get Latest Price",
+      originalPrice: "₹55,00,000",
+    },
+    {
+      id: 2,
+      name: "Heidelberg SBG Cylinder",
+      images: [
+        HeidelbergSBGCylinderImage1,
+        HeidelbergSBGCylinderImage2,
+        HeidelbergSBGCylinderImage3,
+        HeidelbergSBGCylinderImage4,
+      ],
+      description:
+        "The Heidelberg SBG Cylinder is a robust paper die cutting machine built in 1965, imported from Europe, and optimized for precision cutting and creasing. Featuring a large-format bed (56 x 77 cm), suction feeder, swing transfer gripper system, and synchronized bed movement via gear rack, this machine offers excellent reliability for medium- to high-volume production. Fully equipped with tools, chases, and available for purchase in November 2024.",
+      features: [
+        "Cylinder Die Cutting",
+        "Large Format Bed",
+        "Suction Feeder System",
+        "Swing Gripper Transfer",
+      ],
+      price: "Get Latest Price",
+      originalPrice: "₹55,00,000",
+    },
+    {
+      id: 3,
       name: "28 X 40 Automatic Die Cutting Machine",
       images: [
         "https://5.imimg.com/data5/SELLER/Default/2024/2/389412393/XZ/EL/CH/29805837/die-cutting-machine-28x40-500x500.jpeg",
@@ -45,7 +87,7 @@ const DieCuttingMachinesPage = () => {
       originalPrice: "₹55,00,000",
     },
     {
-      id: 2,
+      id: 4,
       name: "Cross Land Die Cutter Machine",
       images: [
         "https://5.imimg.com/data5/SELLER/Default/2024/2/391350744/PF/QR/NA/29805837/cross-land-dai-30-40-machine-500x500.jpeg",
@@ -186,8 +228,9 @@ const DieCuttingMachinesPage = () => {
               <span className="text-blue-600">Die Cutting Machine</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Prominent & Leading Wholesale Trader from Patna, we offer 28 X 40
-              Automatic Die Cutting Machine and Cross Land Die Cutter Machine.
+              Prominent & Leading Wholesale Trader from Patna, we offer BOBST SP
+              102 CER, Heidelberg SBG Cylinder, 28 X 40 Automatic Die Cutting
+              Machine and Cross Land Die Cutter Machine.
             </p>
           </div>
 
@@ -304,7 +347,7 @@ const DieCuttingMachinesPage = () => {
 
                   <div className="border-t pt-4 flex justify-between items-center">
                     <div className="flex flex-col">
-                      <div className="text-2xl font-bold text-green-600">
+                      <div className="text-xl md:text-2xl lg:text-2xl xl:text-2xl font-bold text-green-600">
                         {product.price}
                       </div>
                       {/* {product.originalPrice && (
@@ -315,7 +358,7 @@ const DieCuttingMachinesPage = () => {
                     </div>
                     <button
                       onClick={() => (window.location.href = "tel:8051448069")}
-                      className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-700 hover:to-orange-800 text-white px-6 py-2 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center gap-2 group"
+                      className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-700 hover:to-orange-800 text-white px-2 md:px-6 lg:px-6 xl:px-6 py-2 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center gap-2 group"
                     >
                       Contact Us
                       <ChevronRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />

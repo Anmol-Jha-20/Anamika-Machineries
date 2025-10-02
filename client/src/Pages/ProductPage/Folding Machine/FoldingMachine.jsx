@@ -371,7 +371,7 @@ const FoldingMachinesPage = () => {
 
                   <div className="border-t pt-4 flex justify-between items-center">
                     <div className="flex flex-col">
-                      <div className="text-2xl font-bold text-green-600">
+                      <div className="text-xl md:text-2xl lg:text-2xl xl:text-2xl font-bold text-green-600">
                         {product.price}
                       </div>
                       {/* {product.originalPrice && (
@@ -382,7 +382,7 @@ const FoldingMachinesPage = () => {
                     </div>
                     <button
                       onClick={() => (window.location.href = "tel:8051448069")}
-                      className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-700 hover:to-orange-800 text-white px-6 py-2 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center gap-2 group"
+                      className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-700 hover:to-orange-800 text-white px-2 md:px-6 lg:px-6 xl:px-6 py-2 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center gap-2 group"
                     >
                       Contact Us
                       <ChevronRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />

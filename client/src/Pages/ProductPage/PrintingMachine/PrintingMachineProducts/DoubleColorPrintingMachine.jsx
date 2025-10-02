@@ -117,6 +117,26 @@ const DoubleColorPrintingMachine = () => {
       price: "Get Latest Price",
       originalPrice: "₹55,00,000",
     },
+    {
+      id: 5,
+      name: "508 Web Offset Printing Machine",
+      images: [
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/389415115/ER/PV/TL/29805837/whatsapp-image-2024-02-16-at-8-17-58-pm-1-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/389415121/AM/KX/QQ/29805837/whatsapp-image-2024-02-16-at-8-17-58-pm-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/389415122/DU/XD/IX/29805837/whatsapp-image-2024-02-16-at-8-17-57-pm-1-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/2/389415124/GI/RQ/TF/29805837/whatsapp-image-2024-02-16-at-8-17-57-pm-500x500.jpeg",
+      ],
+      description:
+        "The 508 Web Offset Printing Machine is a compact and efficient sheet-fed press designed for two-color printing. With a maximum paper size of 13 x 19 inches, it is ideal for medium-volume commercial jobs, delivering speeds of up to 1,000 pages per hour. Powered by a 2 HP motor, this machine offers reliable performance with low energy consumption, suitable for various paper stocks and print formats.",
+      features: [
+        "2 Colour Output",
+        "Sheet Fed Input",
+        "13x19 Inch Size",
+        "1000 Pages/Hour",
+      ],
+      price: "Get Latest Price",
+      originalPrice: "₹55,00,000",
+    },
   ];
 
   const nextImage = (productId, imagesLength) => {

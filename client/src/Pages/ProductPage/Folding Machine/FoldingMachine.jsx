@@ -13,6 +13,16 @@ import {
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
+import FoldingMachineImage1 from "../../../assets/FoldingMachineImage/FoldingMachineImage1.jpeg";
+import FoldingMachineImage2 from "../../../assets/FoldingMachineImage/FoldingMachineImage2.jpeg";
+import FoldingMachineImage3 from "../../../assets/FoldingMachineImage/FoldingMachineImage3.jpeg";
+import FoldingMachineImage4 from "../../../assets/FoldingMachineImage/FoldingMachineImage4.jpeg";
+
+import HeidelbergStahlfolderImage1 from "../../../assets/FoldingMachineImage/HeidelbergStahlfolderImage1.jpeg";
+import HeidelbergStahlfolderImage2 from "../../../assets/FoldingMachineImage/HeidelbergStahlfolderImage2.jpeg";
+import HeidelbergStahlfolderImage3 from "../../../assets/FoldingMachineImage/HeidelbergStahlfolderImage3.jpeg";
+import HeidelbergStahlfolderImage4 from "../../../assets/FoldingMachineImage/HeidelbergStahlfolderImage4.jpeg";
+
 const FoldingMachinesPage = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [activeProduct, setActiveProduct] = useState(null);
@@ -25,6 +35,46 @@ const FoldingMachinesPage = () => {
   const products = [
     {
       id: 1,
+      name: "GUK FA 49/4/4",
+      images: [
+        FoldingMachineImage3,
+        FoldingMachineImage4,
+        FoldingMachineImage1,
+        FoldingMachineImage2,
+      ],
+      description:
+        "This GUK FA 49/4/4 paper folding machine is a high-performance, precision folder tailored for pharmaceutical applications, where compact, accurate folds are essential. With a maximum speed of 15,000 sheets per hour, it’s perfect for high-volume operations. Equipped with 4 + 4 folding pockets, this machine handles a variety of fold types and sizes with ease. It includes a pile feeder, original stacker, air compressor, and comes complete with tools and manuals.",
+      features: [
+        "Pharma-Optimized",
+        "High-Speed Folding",
+        "Pile Feeder System",
+        "Air Compressor",
+      ],
+      price: "Get Latest Price",
+      originalPrice: "₹55,00,000",
+    },
+    {
+      id: 2,
+      name: "Heidelberg Stahlfolder KH 55/6 KTTL",
+      images: [
+        HeidelbergStahlfolderImage1,
+        HeidelbergStahlfolderImage2,
+        HeidelbergStahlfolderImage3,
+        HeidelbergStahlfolderImage4,
+      ],
+      description:
+        'This Heidelberg Stahlfolder KH 55/6 KTTL is a robust and versatile folding machine ideal for high-output commercial and pharmaceutical folding operations. With a maximum sheet size of 22" x 32" and 55 cm folding width, it delivers exceptional flexibility and accuracy. It features 6 folding pockets, 2 folding knives, and a knife shaft for complex folding patterns. The Tremat sheet separation system ensures smooth, jam-free feeding, while the pallet feeder and stream delivery maximize productivity.',
+      features: [
+        "Tremat Feeder System",
+        "6-Pocket Folder",
+        "Knife Folding Unit",
+        "Noise-Reduction Hood",
+      ],
+      price: "Get Latest Price",
+      originalPrice: "₹55,00,000",
+    },
+    {
+      id: 3,
       name: "Fully Automatic Paper Folding Machine",
       images: [
         "https://5.imimg.com/data5/SELLER/Default/2024/2/394185071/SU/AX/JT/29805837/stahl-t-36-paper-folding-machine-500x500.jpeg",
@@ -44,7 +94,7 @@ const FoldingMachinesPage = () => {
       originalPrice: "₹55,00,000",
     },
     {
-      id: 2,
+      id: 4,
       name: "Stahl KC 66/4 Paper Folding Machines",
       images: [
         "https://5.imimg.com/data5/SELLER/Default/2024/2/389281947/HM/NY/AC/29805837/paper-folding-machines-500x500.jpeg",
@@ -64,7 +114,7 @@ const FoldingMachinesPage = () => {
       originalPrice: "₹45,00,000",
     },
     {
-      id: 3,
+      id: 5,
       name: "Stahl KD 66/4 Paper Folding Machine",
       images: [
         "https://5.imimg.com/data5/SELLER/Default/2024/2/393737542/KP/FR/CU/29805837/whatsapp-image-2024-02-27-at-9-12-01-am-500x500.jpeg",

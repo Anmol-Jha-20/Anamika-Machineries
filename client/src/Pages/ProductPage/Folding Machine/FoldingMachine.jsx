@@ -85,10 +85,10 @@ const FoldingMachinesPage = () => {
       description:
         "Paper Folding Machine For Sale STAHL T /36  SPCIAL FOR PHARMA WORK - Size : 14×20- Pockets - 4 + 4 - Knife - 1- Age : 1994- Pile Feeder, - Speed  : 15,000 , - ⁠Air Compressor - Original Stacker - ⁠Original Pressure Stacker - Import From Australia 🇪🇺- Tools 🛠️ - ⁠Books 📚- Available Immediately",
       features: [
-        "2-Color Printing",
-        "High Speed Operation",
-        "Precision Registration",
-        "Auto Plate Loading",
+        "Auto Feeding",
+        "High Speed",
+        "Touchscreen Control",
+        "Precision Folding",
       ],
       price: "Get Latest Price",
       originalPrice: "₹55,00,000",
@@ -105,10 +105,10 @@ const FoldingMachinesPage = () => {
       description:
         "Paper Folding Machine For Sale STAHL КС 66/4 KTL-FE- Pockets - 4- Knife - 2 - Side Pocket Aftrt 1st Knife - Age : 1994- Size : 25 X 36- Pile Feeder, - With Tremat Head - Speed  : 15,000 , Digital - - Display- Original Stacker - Import From Europe 🇪🇺- Books 📚- Tools 🛠️ - Available",
       features: [
-        "2-Color Configuration",
-        "Advanced Automation",
-        "Quick Job Changes",
-        "Superior Print Quality",
+        "High Precision",
+        "Robust Build",
+        "Fast Folding",
+        "User-Friendly",
       ],
       price: "Get Latest Price",
       originalPrice: "₹45,00,000",
@@ -125,10 +125,10 @@ const FoldingMachinesPage = () => {
       description:
         "Combi-Foldingmachine for 16 pages !Make: StahlfolderType: KD -66/4 KTLFormat:                           660 x 1280 mmbuilt:                                2002-  Treatment  feeder- 66 cm, 4  combi-buckles- cross-fold-unit KTL  with 2 fold-knifes for 16 pages- center control-station for all functions- swingable control-panel on cross-fold-unit- compressor - tools, technical documentation Available in Stock",
       features: [
-        "2-Color Configuration",
-        "Advanced Automation",
-        "Quick Job Changes",
-        "Superior Print Quality",
+        "Precision Folding",
+        "Durable Build",
+        "Fast Operation",
+        "User-Friendly",
       ],
       price: "Get Latest Price",
       originalPrice: "₹45,00,000",

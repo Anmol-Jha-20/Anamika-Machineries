@@ -16,6 +16,11 @@ import threeknifeimageone from "../../../assets/threeknifethree.jpeg";
 import threeknifeimagetwo from "../../../assets/threeknifeone.jpeg";
 import threeknifeimagethree from "../../../assets/threeknifesix.jpeg";
 import threeknifeimagefour from "../../../assets/threeknifetwo.jpeg";
+import ThreeKnifeTrimmerOne from "../../../assets/PaperCuttingImages/THREE_KNIFE_TRIMMER/ThreeKnifeTrimmerOne.jpeg";
+import ThreeKnifeTrimmerTwo from "../../../assets/PaperCuttingImages/THREE_KNIFE_TRIMMER/ThreeKnifeTrimmerTwo.jpeg";
+import ThreeKnifeTrimmerThree from "../../../assets/PaperCuttingImages/THREE_KNIFE_TRIMMER/ThreeKnifeTrimmerThree.jpeg";
+import ThreeKnifeTrimmerFour from "../../../assets/PaperCuttingImages/THREE_KNIFE_TRIMMER/ThreeKnifeTrimmerFour.jpeg";
+import ThreeKnifeTrimmerFive from "../../../assets/PaperCuttingImages/THREE_KNIFE_TRIMMER/ThreeKnifeTrimmerFive.jpeg";
 
 const TrimmingMachinesPage = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -39,10 +44,10 @@ const TrimmingMachinesPage = () => {
       description:
         "The SDY Three-Knife Trimmer, imported from Europe and often associated with the Perfecta BP SDY or SDY TS model, is a high-performance, precision trimming machine designed for offline bookbinding and finishing applications. Built on a robust cast-iron frame, it ensures durability and consistent output, making it ideal for small to medium production runs.",
       features: [
-        "2-Color Printing",
-        "High Speed Operation",
-        "Precision Registration",
-        "Auto Plate Loading",
+        "Triple Cutting",
+        "High Precision",
+        "Robust Construction",
+        "Fast Operation",
       ],
       price: "Get Latest Price",
       originalPrice: "₹55,00,000",
@@ -58,14 +63,30 @@ const TrimmingMachinesPage = () => {
       ],
       description:
         "A Three-Knife Trimming Machine is a specialized post-press finishing device used primarily in the bookbinding and printing industry to precisely trim the three open sides (top, bottom, and face) of a bound book or printed stack in a single pass.",
-      features: [
-        "2-Color Configuration",
-        "Advanced Automation",
-        "Quick Job Changes",
-        "Superior Print Quality",
-      ],
+      features: ["Triple Blades", "Precise Cuts", "Sturdy Frame", "High Speed"],
       price: "Get Latest Price",
       originalPrice: "₹45,00,000",
+    },
+    {
+      id: 3,
+      name: "Fully High Speed THREE KNIFE TRIMMER",
+      images: [
+        ThreeKnifeTrimmerOne,
+        ThreeKnifeTrimmerTwo,
+        ThreeKnifeTrimmerThree,
+        ThreeKnifeTrimmerFour,
+        ThreeKnifeTrimmerFive,
+      ],
+      description:
+        "This is a fully high-speed three-knife trimmer, imported from China, built for fast and accurate book and booklet trimming. Designed for industrial-level performance, it ensures clean, precise cuts at high production speeds. Ideal for commercial bindery operations demanding efficiency, durability, and consistency in output.",
+      features: [
+        "High-Speed Trimming",
+        "Three-Knife System",
+        "Heavy-Duty Build",
+        "Imported from China",
+      ],
+      price: "Get Latest Price",
+      originalPrice: "₹22,00,000",
     },
   ];
 
@@ -186,8 +207,9 @@ const TrimmingMachinesPage = () => {
               <span className="text-blue-600">Trimming Machines</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our range of products include SDY Three Knife Trimmer Machine and
-              Three Knife Trimming Machine.
+              Our range of products include SDY Three Knife Trimmer Machine,
+              Three Knife Trimming Machine and Fully High Speed Three Knife
+              Trimmer.
             </p>
           </div>
 

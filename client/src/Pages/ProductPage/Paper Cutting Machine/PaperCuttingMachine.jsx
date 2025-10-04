@@ -28,11 +28,6 @@ import WOHLENBERGA43DOTwo from "../../../assets/PaperCuttingImages/WOHLENBERG_A4
 import WOHLENBERGA43DOThree from "../../../assets/PaperCuttingImages/WOHLENBERG_A43DO/WOHLENBERG_A43DOThree.jpeg";
 import WOHLENBERGA43DOFour from "../../../assets/PaperCuttingImages/WOHLENBERG_A43DO/WOHLENBERG_A43DOFour.jpeg";
 import WOHLENBERGA43DOFive from "../../../assets/PaperCuttingImages/WOHLENBERG_A43DO/WOHLENBERG_A43DOFive.jpeg";
-import ThreeKnifeTrimmerOne from "../../../assets/PaperCuttingImages/THREE_KNIFE_TRIMMER/ThreeKnifeTrimmerOne.jpeg";
-import ThreeKnifeTrimmerTwo from "../../../assets/PaperCuttingImages/THREE_KNIFE_TRIMMER/ThreeKnifeTrimmerTwo.jpeg";
-import ThreeKnifeTrimmerThree from "../../../assets/PaperCuttingImages/THREE_KNIFE_TRIMMER/ThreeKnifeTrimmerThree.jpeg";
-import ThreeKnifeTrimmerFour from "../../../assets/PaperCuttingImages/THREE_KNIFE_TRIMMER/ThreeKnifeTrimmerFour.jpeg";
-import ThreeKnifeTrimmerFive from "../../../assets/PaperCuttingImages/THREE_KNIFE_TRIMMER/ThreeKnifeTrimmerFive.jpeg";
 
 const PaperCuttingMachinesPage = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -107,27 +102,7 @@ const PaperCuttingMachinesPage = () => {
       price: "Get Latest Price",
       originalPrice: "₹1,45,00,000",
     },
-    {
-      id: 4,
-      name: "Fully High Speed THREE KNIFE TRIMMER",
-      images: [
-        ThreeKnifeTrimmerOne,
-        ThreeKnifeTrimmerTwo,
-        ThreeKnifeTrimmerThree,
-        ThreeKnifeTrimmerFour,
-        ThreeKnifeTrimmerFive,
-      ],
-      description:
-        "This is a fully high-speed three-knife trimmer, imported from China, built for fast and accurate book and booklet trimming. Designed for industrial-level performance, it ensures clean, precise cuts at high production speeds. Ideal for commercial bindery operations demanding efficiency, durability, and consistency in output.",
-      features: [
-        "High-Speed Trimming",
-        "Three-Knife System",
-        "Heavy-Duty Build",
-        "Imported from China",
-      ],
-      price: "Get Latest Price",
-      originalPrice: "₹22,00,000",
-    },
+
     // {
     //   id: 5,
     //   name: "High Speed Rotary Sheet Cutter Machine",

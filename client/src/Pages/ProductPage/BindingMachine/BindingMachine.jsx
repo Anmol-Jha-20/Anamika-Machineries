@@ -33,14 +33,9 @@ const BindingMachinesPage = () => {
         "https://5.imimg.com/data5/SELLER/Default/2024/2/389414601/UI/HZ/US/29805837/brinder-trimmer-machine-500x500.jpeg",
       ],
       description:
-        "High-precision Komori 2-color offset printing machine designed for exceptional print quality and reliability. Perfect for commercial printing operations requiring consistent results.",
-      features: [
-        "2-Color Printing",
-        "High Speed Operation",
-        "Precision Registration",
-        "Auto Plate Loading",
-      ],
-      price: "₹20,00,000",
+        "The 12 Clamp Perfect Binding Machine is a high-speed, industrial binding solution designed for producing softcover books in bulk. With 12 clamps and automated features, it ensures fast, consistent, and professional-quality binding for commercial print operations.",
+      features: ["12 Clamps", "High Speed", "Strong Adhesion", "Auto Feeding"],
+      price: "Get Latest Price",
       originalPrice: "₹55,00,000",
     },
     {
@@ -53,14 +48,14 @@ const BindingMachinesPage = () => {
         "https://5.imimg.com/data5/SELLER/Default/2024/2/394186399/PP/HV/ZG/29805837/single-claim-perfect-binding-machine-500x500.jpg",
       ],
       description:
-        "Professional-grade Heidelberg Sorsz 2-color offset printing machine offering superior print quality with advanced automation features for enhanced productivity.",
+        "The Single Clamp Perfect Book Binding Machine is a compact and versatile solution for small to medium-scale book production. Ideal for short runs and on-demand printing, it offers reliable binding with a professional finish, making it perfect for copy shops, publishers, and digital printers.",
       features: [
-        "2-Color Configuration",
-        "Advanced Automation",
-        "Quick Job Changes",
-        "Superior Print Quality",
+        "Single Clamp",
+        "Compact Design",
+        "Easy Operation",
+        "Strong Binding",
       ],
-      price: "₹3,00,000",
+      price: "Get Latest Price",
       originalPrice: "₹45,00,000",
     },
     {
@@ -73,13 +68,8 @@ const BindingMachinesPage = () => {
         "https://5.imimg.com/data5/SELLER/Default/2024/2/394187355/WF/IR/JC/29805837/wellbound-clamp-perfect-binder-500x500.jpg",
       ],
       description:
-        "State-of-the-art Heidelberg CD 102-6 LX featuring 6-color capability with advanced technology for high-volume commercial printing operations.",
-      features: [
-        "6-Color Printing",
-        "Large Format",
-        "Advanced Controls",
-        "High Volume Output",
-      ],
+        "The 6 Clamp Wellbound Perfect Binding Machine is a mid-range, semi-automatic bookbinding machine designed for efficient production of softcover books. With six synchronized clamps and robust binding technology, it offers a balance of speed, precision, and quality—ideal for medium-scale print operations.",
+      features: ["6 Clamps", "Mid-Volume", "Strong Binding", "User Friendly"],
       price: "₹9,00,000",
       originalPrice: "₹1,45,00,000",
     },
@@ -93,12 +83,12 @@ const BindingMachinesPage = () => {
         "https://5.imimg.com/data5/SELLER/Default/2024/2/389413765/TL/MC/TT/29805837/whatsapp-image-2024-02-16-at-8-10-17-pm-2-500x500.jpeg",
       ],
       description:
-        "Compact and efficient Heidelberg GTO 52 VP perfect for small to medium print runs with exceptional versatility and print quality.",
+        "The Kolbus Perfect Binder is a premium, fully automatic binding machine renowned for its precision, speed, and durability. Designed for high-volume book production, it delivers top-tier binding quality with advanced automation and engineering, making it a preferred choice for large-scale publishing and printing operations.",
       features: [
-        "Compact Design",
-        "Variable Print",
-        "Easy Operation",
-        "Quick Setup",
+        "High Speed",
+        "Precision Binding",
+        "Full Automation",
+        "Durable Build",
       ],
       price: "Get Latest Price",
       originalPrice: "₹22,00,000",
@@ -113,12 +103,12 @@ const BindingMachinesPage = () => {
         "https://5.imimg.com/data5/SELLER/Default/2024/2/389411434/UP/KW/IP/29805837/binding-machine-500x500.jpeg",
       ],
       description:
-        "Premium Heidelberg SM 74 color printing machine delivering outstanding color reproduction and efficiency for demanding commercial applications.",
+        "The Single Clamp Perfect Book Binding Machine is a user-friendly, compact binder ideal for short-run or on-demand book production. It offers reliable performance and professional-quality binding, making it a perfect fit for small print shops, publishers, and digital printing environments.",
       features: [
-        "Multi-Color Printing",
-        "Premium Quality",
-        "Fast Production",
-        "Color Management",
+        "Single Clamp",
+        "Compact Size",
+        "Easy Operation",
+        "Strong Adhesion",
       ],
       price: "Get Latest Price",
       originalPrice: "₹85,00,000",
@@ -133,12 +123,12 @@ const BindingMachinesPage = () => {
         "https://5.imimg.com/data5/SELLER/Default/2024/2/394186887/SE/CS/QB/29805837/6-clamp-perfect-binding-machine-500x500.jpg",
       ],
       description:
-        "Reliable Heidelberg single color printing machine ideal for monochrome printing tasks with consistent quality and operational efficiency.",
+        "The 6 Clamp Welbound Perfect Binding Machine is a reliable, mid-capacity bookbinding solution designed for commercial printers seeking efficient and consistent output. With six active clamps and automated features, it delivers professional-quality binding ideal for medium to large print volumes.",
       features: [
-        "Single Color",
-        "Reliable Performance",
-        "Cost Effective",
-        "Easy Maintenance",
+        "6 Clamps",
+        "Mid Capacity",
+        "Auto Operation",
+        "Strong Binding",
       ],
       price: "Get Latest Price",
       originalPrice: "₹15,00,000",
@@ -262,8 +252,8 @@ const BindingMachinesPage = () => {
               <span className="text-blue-600">Binding Machine</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Discover our comprehensive collection of world-class printing
-              machines from industry leaders Heidelberg and Komori
+              Explore our curated selection of world-class binding machines from
+              leading industry brands.
             </p>
           </div>
 

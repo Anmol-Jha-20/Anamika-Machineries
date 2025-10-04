@@ -35,12 +35,12 @@ const PastingMachinesPage = () => {
       description:
         "A 4 Fold Side Lock Bottom Carton Pasting Machine is a high-speed packaging machine used in the folding carton industry. It is designed to automatically fold and paste pre-creased carton blanks with a four-fold locking mechanism on the bottom flaps.",
       features: [
-        "2-Color Printing",
-        "High Speed Operation",
-        "Precision Registration",
-        "Auto Plate Loading",
+        "Machine Frame Thickness 16mm",
+        "Machine Length 20ft *3.5ft",
+        "Machine Weight 2200kg",
+        "Delivery Belt 3mm thickness",
       ],
-      price: "₹10,00,000",
+      price: "Get Latest Price",
       originalPrice: "₹55,00,000",
     },
     {
@@ -55,12 +55,12 @@ const PastingMachinesPage = () => {
       description:
         "A Box Pasting Machine is a packaging machine used to apply adhesive to pre-creased and die-cut carton blanks, folding and pasting them into finished boxes. It automates the process of box assembly, ensuring fast, accurate, and consistent gluing for high-volume production.",
       features: [
-        "2-Color Configuration",
-        "Advanced Automation",
-        "Quick Job Changes",
-        "Superior Print Quality",
+        "Digital Batch Counter",
+        "5 HP AC drive INVT",
+        "All Belts 25mm",
+        "Cartoon Supporter 3Nos",
       ],
-      price: "₹8,00,000",
+      price: "Get Latest Price",
       originalPrice: "₹45,00,000",
     },
   ];

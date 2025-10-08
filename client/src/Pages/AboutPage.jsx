@@ -17,6 +17,7 @@ import {
   Newspaper,
   FoldHorizontal,
 } from "lucide-react";
+import { motion } from "framer-motion";
 
 const AboutPage = () => {
   const [isVisible, setIsVisible] = useState({});
@@ -102,13 +103,12 @@ const AboutPage = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* SEO Meta Tags would be handled by helmet or similar in real app */}
-
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-800 via-blue-800 to-blue-600 overflow-hidden">
+      {/* <section className="relative bg-gradient-to-br from-blue-800 via-blue-800 to-blue-600 overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-20"></div>
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/50 to-transparent"></div>
 
-        {/* Animated background elements */}
+        
         <div className="absolute top-20 left-10 w-32 h-32 bg-yellow-400/10 rounded-full blur-xl animate-pulse"></div>
         <div className="absolute bottom-20 right-10 w-40 h-40 bg-orange-400/10 rounded-full blur-xl animate-pulse delay-700"></div>
 
@@ -146,18 +146,262 @@ const AboutPage = () => {
               style={scaleIn("hero-image", 0.3)}
               className="relative"
             >
-              {/* <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/20"> */}
+              
               <img
                 src="https://5.imimg.com/data5/SELLER/Default/2024/2/389326264/DL/UG/ML/29805837/machine-500x500.jpeg"
                 alt="Anamika Machineries Industrial Equipment"
                 className="w-full h-80 object-cover rounded-xl shadow-2xl"
               />
-              {/* </div> */}
+              
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+      {/* hero Section 2 */}
 
+      <section className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-blue-600 overflow-hidden min-h-screen flex items-center">
+        {/* Layered Background Effects */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-700/20 via-transparent to-transparent"></div>
+        <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:50px_50px]"></div>
+
+        {/* Animated Background Orbs */}
+        <motion.div
+          className="absolute top-20 -left-20 w-72 h-72 bg-yellow-400/20 rounded-full blur-3xl"
+          animate={{
+            scale: [1, 1.2, 1],
+            opacity: [0.3, 0.5, 0.3],
+            x: [0, 50, 0],
+            y: [0, 30, 0],
+          }}
+          transition={{
+            duration: 8,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+        />
+        <motion.div
+          className="absolute bottom-20 -right-20 w-96 h-96 bg-orange-400/20 rounded-full blur-3xl"
+          animate={{
+            scale: [1, 1.3, 1],
+            opacity: [0.2, 0.4, 0.2],
+            x: [0, -50, 0],
+            y: [0, -30, 0],
+          }}
+          transition={{
+            duration: 10,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 1,
+          }}
+        />
+        <motion.div
+          className="absolute top-1/2 left-1/2 w-64 h-64 bg-purple-400/10 rounded-full blur-3xl"
+          animate={{
+            scale: [1, 1.5, 1],
+            opacity: [0.1, 0.3, 0.1],
+          }}
+          transition={{
+            duration: 7,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 2,
+          }}
+        />
+
+        {/* Floating Particles */}
+        {[...Array(6)].map((_, i) => (
+          <motion.div
+            key={i}
+            className="absolute w-2 h-2 bg-white/20 rounded-full"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+            }}
+            animate={{
+              y: [-20, -60, -20],
+              opacity: [0, 1, 0],
+            }}
+            transition={{
+              duration: 3 + Math.random() * 2,
+              repeat: Infinity,
+              delay: Math.random() * 2,
+            }}
+          />
+        ))}
+
+        <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+            {/* Left Content */}
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              className="text-center lg:text-left space-y-6 lg:space-y-8"
+            >
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2, duration: 0.6 }}
+                className="inline-block"
+              >
+                <span className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-yellow-300 text-sm font-medium border border-white/20">
+                  <Award className="w-4 h-4" />
+                  Trusted Industrial Partner
+                </span>
+              </motion.div>
+
+              <motion.h1
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.3, duration: 0.8 }}
+                className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight"
+              >
+                About{" "}
+                <motion.span
+                  className="block sm:inline text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-orange-400 to-orange-500"
+                  animate={{
+                    backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
+                  }}
+                  transition={{
+                    duration: 5,
+                    repeat: Infinity,
+                    ease: "linear",
+                  }}
+                  style={{ backgroundSize: "200% auto" }}
+                >
+                  Anamika Machineries
+                </motion.span>
+              </motion.h1>
+
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.5, duration: 0.6 }}
+                className="text-lg sm:text-xl lg:text-2xl text-blue-100 leading-relaxed max-w-2xl mx-auto lg:mx-0"
+              >
+                Your Trusted Partner in Industrial Machinery Solutions
+              </motion.p>
+
+              {/* Info Cards */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.7, duration: 0.6 }}
+                className="flex flex-wrap gap-4 justify-center lg:justify-start"
+              >
+                <motion.div
+                  whileHover={{ scale: 1.05, y: -5 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                  className="flex items-center gap-3 px-5 py-3 bg-white/10 backdrop-blur-md rounded-xl border border-white/20 hover:bg-white/15 transition-colors"
+                >
+                  <div className="p-2 bg-yellow-400/20 rounded-lg">
+                    <MapPin className="w-5 h-5 text-yellow-400" />
+                  </div>
+                  <div className="text-left">
+                    <p className="text-xs text-blue-200">Location</p>
+                    <p className="text-white font-semibold">Patna, Bihar</p>
+                  </div>
+                </motion.div>
+
+                <motion.div
+                  whileHover={{ scale: 1.05, y: -5 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                  className="flex items-center gap-3 px-5 py-3 bg-white/10 backdrop-blur-md rounded-xl border border-white/20 hover:bg-white/15 transition-colors"
+                >
+                  <div className="p-2 bg-orange-400/20 rounded-lg">
+                    <Calendar className="w-5 h-5 text-orange-400" />
+                  </div>
+                  <div className="text-left">
+                    <p className="text-xs text-blue-200">Since</p>
+                    <p className="text-white font-semibold">2017</p>
+                  </div>
+                </motion.div>
+
+                <motion.div
+                  whileHover={{ scale: 1.05, y: -5 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                  className="flex items-center gap-3 px-5 py-3 bg-white/10 backdrop-blur-md rounded-xl border border-white/20 hover:bg-white/15 transition-colors"
+                >
+                  <div className="p-2 bg-purple-400/20 rounded-lg">
+                    <Users className="w-5 h-5 text-purple-400" />
+                  </div>
+                  <div className="text-left">
+                    <p className="text-xs text-blue-200">Experience</p>
+                    <p className="text-white font-semibold">8+ Years</p>
+                  </div>
+                </motion.div>
+              </motion.div>
+            </motion.div>
+
+            {/* Right Image Section */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8, rotateY: -15 }}
+              animate={{ opacity: 1, scale: 1, rotateY: 0 }}
+              transition={{ delay: 0.4, duration: 1, ease: "easeOut" }}
+              className="relative group"
+            >
+              {/* Decorative Elements */}
+              <motion.div
+                className="absolute -inset-4 bg-gradient-to-r from-yellow-400/30 to-orange-500/30 rounded-2xl blur-2xl"
+                animate={{
+                  opacity: [0.5, 0.8, 0.5],
+                  scale: [1, 1.05, 1],
+                }}
+                transition={{
+                  duration: 4,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+              />
+
+              {/* Image Container */}
+              <motion.div
+                className="relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-4 sm:p-6 border border-white/20 shadow-2xl overflow-hidden"
+                whileHover={{ scale: 1.02 }}
+                transition={{ type: "spring", stiffness: 200 }}
+              >
+                <motion.div className="absolute inset-0 bg-gradient-to-tr from-yellow-400/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+                <motion.img
+                  src="https://5.imimg.com/data5/SELLER/Default/2024/2/389326264/DL/UG/ML/29805837/machine-500x500.jpeg"
+                  alt="Anamika Machineries Industrial Equipment"
+                  className="w-full h-64 sm:h-80 lg:h-96 object-cover rounded-xl shadow-2xl relative z-10"
+                  initial={{ scale: 1.1 }}
+                  animate={{ scale: 1 }}
+                  transition={{ delay: 0.6, duration: 0.8 }}
+                  whileHover={{ scale: 1.05 }}
+                />
+
+                {/* Floating Badge */}
+                <motion.div
+                  className="absolute top-8 right-8 bg-yellow-400 text-blue-900 px-4 py-2 rounded-full font-bold shadow-lg z-20"
+                  initial={{ opacity: 0, y: -20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 1, duration: 0.6 }}
+                  whileHover={{ scale: 1.1, rotate: 5 }}
+                >
+                  Premium Quality
+                </motion.div>
+              </motion.div>
+
+              {/* Corner Accents */}
+              <motion.div
+                className="absolute -bottom-4 -right-4 w-24 h-24 border-4 border-yellow-400/30 rounded-full"
+                animate={{ rotate: 360 }}
+                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+              />
+              <motion.div
+                className="absolute -top-4 -left-4 w-16 h-16 border-4 border-orange-400/30 rounded-full"
+                animate={{ rotate: -360 }}
+                transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
+              />
+            </motion.div>
+          </div>
+        </div>
+
+        {/* Bottom Gradient Fade */}
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
+      </section>
       {/* Stats Section */}
       <section className="py-16 bg-gradient-to-r from-gray-50 to-blue-50">
         <div className="container mx-auto px-6">
@@ -185,7 +429,6 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
-
       {/* Main Content */}
       <section className="py-20">
         <div className="container mx-auto px-6">
@@ -325,7 +568,6 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
-
       {/* Mission & Vision */}
       <section className="py-20 bg-gradient-to-br from-blue-50 via-white to-yellow-50">
         <div className="container mx-auto px-6">
@@ -386,7 +628,6 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
-
       {/* Values Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-6">
@@ -449,7 +690,6 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
-
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-blue-900 via-blue-800 to-blue-700 relative overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-10"></div>
@@ -486,7 +726,6 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
-
       {/* Final Message */}
       {/* <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-6">
